@@ -1,0 +1,16 @@
+{
+  "name": "nx-docs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.13",
+    "vue": "3.2.39"
+  }
+}
