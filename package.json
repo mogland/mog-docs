@@ -3,11 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev  --port 3333 --open",
-    "build": "nr prefetch && vitepress build  && node .vitepress/scripts/build-pwa.mjs",
+    "build": "vitepress build  && node .vitepress/scripts/build-pwa.mjs",
     "build-no-prefetch": "vitepress build  && node .vitepress/scripts/build-pwa.mjs",
     "serve": "vitepress serve ",
-    "preview-https": "pnpm run build && serve .vitepress/dist",
-    "prefetch": "esno .vitepress/scripts/fetch-avatars.ts"
+    "preview-https": "pnpm run build && serve .vitepress/dist"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.1",
