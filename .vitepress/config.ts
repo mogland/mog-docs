@@ -1,9 +1,9 @@
 /*
- * @FilePath: /nx-docs-next/docs/.vitepress/config.ts
+ * @FilePath: /nx-docs-next/.vitepress/config.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-09 23:30:30
+ * @LastEditTime: 2022-09-10 00:16:20
  * Coding With IU
  */
 
@@ -50,6 +50,20 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: "https://github.com/nx-space" },
     ],
+
+    sidebar: {
+      '/': [
+        {
+          text: '指南',
+          items: [
+            {
+              text: "简介",
+              link: '/guide/why',
+            }
+          ],
+        }
+      ]
+    },
 
     footer: {
       message: 'Released under the AGPLv3 License.',
