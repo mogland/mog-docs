@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:06:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-09 23:54:24
+ * @LastEditTime: 2022-09-10 00:07:04
  * Coding With IU
  */
 import contributorNames from './contributor-names.json'
@@ -56,25 +56,28 @@ const plainTeamMembers: CoreTeam[] = [
     twitter: 'wibus_wee',
     // sponsor: 'https://github.com/sponsors/antfu',
     title: '🇨🇳 Uaena / 15 yo. / FSD (like) / Personal Piano Player & Singer',
-    desc: 'Core team member & Organizer of NEXT',
+    desc: 'NEXT 核心开发者 & 核心组织者',
   },
   {
     avatar: `https://github.com/MYXXTS.png`,
     name: 'MYXXTS',
     github: 'MYXXTS',
     title: '珍藏于心底的时光，是记忆深处最美的花',
-    desc: 'NEXT\'s RFC review member & Project Designer'
+    desc: 'NEXT RFC 主要审核者 & 项目设计者',
 
   },
   {
     avatar: `https://github.com/ttimochan.png`,
     name: 'ttimochan',
     github: 'ttimochan',
+    title: "Let's start learning !",
+    desc: 'NEXT 和 Mix-Space 文档作者与 PR 审核者',
   },
   {
     avatar: `https://github.com/origami-tech.png`,
     name: 'Origami',
     github: 'origami-tech',
+    desc: 'NEXT 核心协助开发者'
   },
 
 ]
