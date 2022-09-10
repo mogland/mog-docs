@@ -3,12 +3,12 @@ layout: home
 sidebar: false
 
 hero:
-  name: NEXT Space
-  text: 多样且强大的下一代空间
-  tagline: 你的下一个博客空间就是它！冲！
-  # image:
-  #   src: /Next-Space-Logo.png
-  #   alt: Vite
+  name: Mog
+  # text: /mɑːɡ/
+  tagline: /mɑːɡ/
+  image:
+    src: /logo.svg
+    alt: NEXT
   actions:
     - theme: brand
       text: Get Started

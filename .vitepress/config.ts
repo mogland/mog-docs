@@ -13,19 +13,19 @@ import { teamMembers } from './contributors'
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "NEXT Space",
+  title: "Mog",
   description: "一款永向未来的 CMS 博客系统",
   head: [
     ['meta', { name: 'theme-color', content: '#729b1a' }],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
-    ['meta', { name: 'author', content: `${teamMembers.map(c => c.name).join(', ')} and ${"NEXT Space"} contributors` }],
+    ['meta', { name: 'author', content: `${teamMembers.map(c => c.name).join(', ')} and ${"Mog"} contributors` }],
     ['meta', { name: 'keywords', content: 'vitest, vite, test, coverage, snapshot, react, vue, preact, svelte, solid, lit, ruby, cypress, puppeteer, jsdom, happy-dom, test-runner, jest, typescript, esm, tinypool, tinyspy, c8, node' }],
-    ['meta', { property: 'og:title', content: "NEXT Space" }],
+    ['meta', { property: 'og:title', content: "Mog" }],
     ['meta', { property: 'og:description', content: "一款永向未来的 CMS 博客系统" }],
     ['meta', { property: 'og:url', content: "https://nx.js.org" }],
     // ['meta', { property: 'og:image', content: ogImage }],
-    ['meta', { name: 'twitter:title', content: "NEXT Space" }],
+    ['meta', { name: 'twitter:title', content: "Mog" }],
     ['meta', { name: 'twitter:description', content: "一款永向未来的 CMS 博客系统" }],
     // ['meta', { name: 'twitter:image', content: ogImage }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],

@@ -58,8 +58,8 @@ export default defineConfig({
       includeAssets: fg.sync('**/*.{png,svg,ico,txt}', { cwd: resolve(__dirname, 'public') }),
       manifest: {
         id: '/',
-        name: "NEXT Space",
-        short_name: "NEXT Space",
+        name: "Mog",
+        short_name: "Mog",
         description: "一款永向未来的 CMS 博客系统",
         theme_color: '#ffffff',
         icons: [
