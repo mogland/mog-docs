@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-10 00:16:20
+ * @LastEditTime: 2022-09-10 19:53:14
  * Coding With IU
  */
 
@@ -48,7 +48,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: "https://github.com/nx-space" },
+      { icon: 'github', link: "https://github.com/mogland" },
+    ],
+
+    nav: [
+      { text: '指南', link: '/guide/' },
     ],
 
     sidebar: {
@@ -59,9 +63,17 @@ export default defineConfig({
             {
               text: "简介",
               link: '/guide/why',
+            },
+            {
+              text: '快速起步',
+              link: '/guide/',
+            },
+            {
+              text: '主要功能',
+              link: '/guide/features',
             }
           ],
-        }
+        },
       ]
     },
 
