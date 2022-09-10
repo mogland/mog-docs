@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:06:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-10 16:12:43
+ * @LastEditTime: 2022-09-10 19:57:11
  * Coding With IU
  */
 import contributorNames from './contributor-names.json'
@@ -77,8 +77,14 @@ const plainTeamMembers: CoreTeam[] = [
     avatar: `https://github.com/origami-tech.png`,
     name: 'Origami',
     github: 'origami-tech',
-    desc: 'Mog 核心协助开发者'
+    desc: 'Mog 核心协助开发者 & 项目重要赞助者'
   },
+  {
+    avatar: `https://github.com/reborn1028.png`,
+    name: 'Guaguamiao',
+    github: 'reborn1028',
+    desc: 'Mog 核心协助开发者 & 主业 C# 开发者'
+  }
 
 ]
 
