@@ -17,6 +17,19 @@ html:not(.dark) [img-dark] {
   border: 1px solid #8882;
 }
 
+.image-bg {
+  z-index: 99;
+}
+
+/* background to make it more readable */
+.dark .VPNavBar.has-sidebar .content {
+  background: var(--vp-c-bg) !important;
+}
+
+.dark .VPNavBar {
+  background: #1a1a1ab7 !important;
+}
+
 /* h3 breaks SEO => replaced with h2 with the same size */
 .home-content h2 {
   margin-top: 2rem;

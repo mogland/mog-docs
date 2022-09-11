@@ -3,6 +3,7 @@
  * -------------------------------------------------------------------------- */
 
  :root {
+  --vp-c-bg-alt: #fff;
   --vp-c-accent: #dab40b;
   --vp-c-brand: #6da13f;
   --vp-c-brand-light: #7ec242;
@@ -22,6 +23,8 @@
 }
 
 .dark {
+  --vp-c-bg: #1a1a1a;
+  --vp-c-bg-alt: #1a1a1a;
   --vp-code-block-bg: rgba(0,0,0,0.2);
   --vp-c-text-code: #c0cec0;
   /* fix TIP: check the same above (these are the defaults) */
