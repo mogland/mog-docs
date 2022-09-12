@@ -4,7 +4,7 @@ sidebar: false
 
 hero:
   name: Mog
-  text: 充满弹性的模块化博客系统
+  text: 一款弹性的模块化 CMS 博客系统
   tagline: Module + Blog = /mɑːɡ/
   image:
     src: /logo.svg

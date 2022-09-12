@@ -1,9 +1,9 @@
 /*
- * @FilePath: /nx-docs-next/vite.config.ts
+ * @FilePath: /mog-docs/vite.config.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:22:14
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-09 23:31:57
+ * @LastEditTime: 2022-09-12 15:40:35
  * Coding With IU
  */
 import fs from 'fs'
@@ -13,8 +13,8 @@ import Components from 'unplugin-vue-components/vite'
 import Unocss from 'unocss/vite'
 import { presetAttributify, presetIcons, presetUno } from 'unocss'
 import { resolve } from 'pathe'
-import { VitePWA } from 'vite-plugin-pwa'
-import fg from 'fast-glob'
+// import { VitePWA } from 'vite-plugin-pwa'
+// import fg from 'fast-glob'
 
 
 export default defineConfig({
@@ -51,42 +51,42 @@ export default defineConfig({
       ],
     }) as unknown as Plugin,
     IncludesPlugin(),
-    VitePWA({
-      outDir: '.vitepress/dist',
-      registerType: 'autoUpdate',
-      // include all static assets under public/
-      includeAssets: fg.sync('**/*.{png,svg,ico,txt}', { cwd: resolve(__dirname, 'public') }),
-      manifest: {
-        id: '/',
-        name: "Mog",
-        short_name: "Mog",
-        description: "一款永向未来的 CMS 博客系统",
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'logo.svg',
-            sizes: '165x165',
-            type: 'image/svg',
-            purpose: 'any maskable',
-          },
-        ],
-      },
-      workbox: {
-        navigateFallbackDenylist: [/^\/new$/],
-        globPatterns: ['**/*.{css,js,html,woff2}'],
+    // VitePWA({
+    //   outDir: '.vitepress/dist',
+    //   registerType: 'autoUpdate',
+    //   // include all static assets under public/
+    //   includeAssets: fg.sync('**/*.{png,svg,ico,txt}', { cwd: resolve(__dirname, 'public') }),
+    //   manifest: {
+    //     id: '/',
+    //     name: "Mog",
+    //     short_name: "Mog",
+    //     description: "一款永向未来的 CMS 博客系统",
+    //     theme_color: '#ffffff',
+    //     icons: [
+    //       {
+    //         src: 'pwa-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: 'pwa-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png',
+    //       },
+    //       {
+    //         src: 'logo.svg',
+    //         sizes: '165x165',
+    //         type: 'image/svg',
+    //         purpose: 'any maskable',
+    //       },
+    //     ],
+    //   },
+    //   workbox: {
+    //     navigateFallbackDenylist: [/^\/new$/],
+    //     globPatterns: ['**/*.{css,js,html,woff2}'],
         
-      },
-    }),
+    //   },
+    // }),
   ],
 })
 

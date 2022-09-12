@@ -1,9 +1,9 @@
 /*
- * @FilePath: /nx-docs-next/.vitepress/config.ts
+ * @FilePath: /mog-docs/.vitepress/config.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-10 19:53:14
+ * @LastEditTime: 2022-09-12 15:41:16
  * Coding With IU
  */
 
@@ -14,7 +14,7 @@ import { teamMembers } from './contributors'
 export default defineConfig({
   lang: "zh-CN",
   title: "Mog",
-  description: "一款永向未来的 CMS 博客系统",
+  description: "一款弹性的模块化 CMS 博客系统",
   head: [
     ['meta', { name: 'theme-color', content: '#729b1a' }],
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
@@ -23,14 +23,13 @@ export default defineConfig({
     ['meta', { name: 'keywords', content: 'vitest, vite, test, coverage, snapshot, react, vue, preact, svelte, solid, lit, ruby, cypress, puppeteer, jsdom, happy-dom, test-runner, jest, typescript, esm, tinypool, tinyspy, c8, node' }],
     ['meta', { property: 'og:title', content: "Mog" }],
     ['meta', { property: 'og:description', content: "一款永向未来的 CMS 博客系统" }],
-    ['meta', { property: 'og:url', content: "https://nx.js.org" }],
-    // ['meta', { property: 'og:image', content: ogImage }],
+    ['meta', { property: 'og:url', content: "https://mog.js.org" }],
+    ['meta', { property: 'og:image', content: "https://mog.js.org/logo.svg" }],
     ['meta', { name: 'twitter:title', content: "Mog" }],
     ['meta', { name: 'twitter:description', content: "一款永向未来的 CMS 博客系统" }],
-    // ['meta', { name: 'twitter:image', content: ogImage }],
+    ['meta', { name: 'twitter:image', content: "https://mog.js.org/logo.svg" }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
-    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' }],
   ],
   lastUpdated: true,
   markdown: {
@@ -43,7 +42,7 @@ export default defineConfig({
     logo: '/logo.svg',
 
     editLink: {
-      pattern: 'https://github.com/vitest-dev/vitest/tree/main/docs/:path',
+      pattern: 'https://github.com/mogland/mog-docs/tree/main/:path',
       text: 'Suggest changes to this page',
     },
 
