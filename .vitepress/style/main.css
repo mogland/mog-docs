@@ -17,10 +17,6 @@ html:not(.dark) [img-dark] {
   border: 1px solid #8882;
 }
 
-.image-bg {
-  z-index: 99;
-}
-
 /* background to make it more readable */
 .dark .VPNavBar.has-sidebar .content {
   background: var(--vp-c-bg) !important;
