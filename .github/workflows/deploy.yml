@@ -37,7 +37,7 @@ jobs:
             - recursive: true
               args: [--no-frozen-lockfile]
       - run: pnpm run build
-      - run: echo 'nx-docs.iucky.cn' > .vitepress/dist/CNAME
+      - run: echo 'mog.js.org' > .vitepress/dist/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
