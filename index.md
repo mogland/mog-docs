@@ -24,8 +24,8 @@ hero:
       link: https://github.com/mogland
 
 features:
-  - title: 开箱即用 
-    details: 仅需一句命令即可使用 Docker 启动完整项目，同时使用 NxCli 也可自动部署。
+  - title: 弹性服务
+    details: 你可以随意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。
   - title: 主题市场  (WIP)
     details: 主题多种开发方式，支持使用模板引擎耦合式开发或前后端分离开发，提供更多的主题选择。
   - title: 插件系统  (WIP)
