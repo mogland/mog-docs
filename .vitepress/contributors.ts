@@ -1,9 +1,9 @@
 /*
- * @FilePath: /nx-docs-next/.vitepress/contributors.ts
+ * @FilePath: /mog-docs/.vitepress/contributors.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:06:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-10 19:57:11
+ * @LastEditTime: 2022-09-12 16:27:29
  * Coding With IU
  */
 import contributorNames from './contributor-names.json'
@@ -84,6 +84,13 @@ const plainTeamMembers: CoreTeam[] = [
     name: 'Guaguamiao',
     github: 'reborn1028',
     desc: 'Mog 核心协助开发者 & 主业 C# 开发者'
+  },
+  {
+    avatar: `https://q1.qlogo.cn/g?b=qq&nk=80360650&s=100`,
+    name: 'Rils_s',
+    github: 'iRoZhi',
+    title: 'If people are ambitious, everything can be done!',
+    desc: 'Mog 项目重要赞助者'
   }
 
 ]
