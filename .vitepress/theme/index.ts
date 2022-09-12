@@ -1,21 +1,18 @@
 /*
- * @FilePath: /nx-docs-next/.vitepress/theme/index.ts
+ * @FilePath: /mog-docs/.vitepress/theme/index.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:13:45
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-09 23:13:45
+ * @LastEditTime: 2022-09-12 15:43:09
  * Coding With IU
  */
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
-import { inBrowser } from 'vitepress'
+
 import '../style/main.css'
 import '../style/vars.css'
 import 'uno.css'
 import HomePage from '../components/HomePage.vue'
-
-if (inBrowser)
-  import('./pwa')
 
 export default {
   ...Theme,
