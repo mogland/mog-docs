@@ -13,7 +13,7 @@ specifiers:
   unocss: 0.45.18
   unplugin-vue-components: 0.22.7
   vite: 3.1.0
-  vite-plugin-pwa: 0.12.7
+  vite-plugin-pwa: 0.12.8
   vitepress: 1.0.0-alpha.13
   vue: latest
   workbox-window: 6.5.4
@@ -35,7 +35,7 @@ devDependencies:
   unocss: 0.45.18_vite@3.1.0
   unplugin-vue-components: 0.22.7_vite@3.1.0+vue@3.2.39
   vite: 3.1.0
-  vite-plugin-pwa: 0.12.7_zp7t6aa2r77waajuyr5zt63phe
+  vite-plugin-pwa: 0.12.8_zp7t6aa2r77waajuyr5zt63phe
   workbox-window: 6.5.4
 
 packages:
@@ -4115,8 +4115,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-pwa/0.12.7_zp7t6aa2r77waajuyr5zt63phe:
-    resolution: {integrity: sha512-salSwS1wWc1niNWfhX2W6gtfXmk+XESMz62w95EHLq6fSM2bDgDm1APmvq1nkDcxH6Onky7HxysCBKMzvOHXYg==}
+  /vite-plugin-pwa/0.12.8_zp7t6aa2r77waajuyr5zt63phe:
+    resolution: {integrity: sha512-pSiFHmnJGMQJJL8aJzQ8SaraZBSBPMGvGUkCNzheIq9UQCEk/eP3UmANNmS9eupuhIpTK8AdxTOHcaMcAqAbCA==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
       workbox-window: ^6.4.0
