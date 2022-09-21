@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "9.2.0",
-    "jiti": "1.15.0",
+    "jiti": "1.16.0",
     "vitepress": "1.0.0-alpha.13",
     "vue": "latest"
   },
