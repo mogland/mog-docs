@@ -14,14 +14,14 @@ specifiers:
   unplugin-vue-components: 0.22.7
   vite: 3.1.0
   vite-plugin-pwa: 0.13.0
-  vitepress: 1.0.0-alpha.16
+  vitepress: 1.0.0-alpha.17
   vue: latest
   workbox-window: 6.5.4
 
 dependencies:
   '@vueuse/core': 9.3.0_vue@3.2.40
   jiti: 1.16.0
-  vitepress: 1.0.0-alpha.16
+  vitepress: 1.0.0-alpha.17
   vue: 3.2.40
 
 devDependencies:
@@ -4171,8 +4171,8 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/1.0.0-alpha.16:
-    resolution: {integrity: sha512-IXW3jA2Y9BsoYlpVuVcAy2XEu1wuoq2xmPvSDPVFrh8HV+oVpuvbPUCHqG6smEcu86xw3g4JjreqAwPlpPn6gw==}
+  /vitepress/1.0.0-alpha.17:
+    resolution: {integrity: sha512-8qsR0PPcvxZFDKSU7b7VenxDoqlEbWuWgogeyRhp1pQ96QIAlWPS9BbGGHWlnEfgdtLVDxEfAmCBRE0YJX/Thg==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.2.1
