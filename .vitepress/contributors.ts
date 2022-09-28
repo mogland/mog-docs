@@ -55,7 +55,7 @@ const plainTeamMembers: CoreTeam[] = [
     github: 'wibus-wee',
     twitter: 'wibus_wee',
     // sponsor: 'https://github.com/sponsors/antfu',
-    title: '🇨🇳 Uaena / 15 yo. / FSD (like) / Personal Piano Player & Singer',
+    title: '🇨🇳 Uaena / 16 yo. / FSD (like) / Personal Piano Player & Singer',
     desc: 'Mog 核心开发者 & 核心组织者',
   },
   {
@@ -71,7 +71,7 @@ const plainTeamMembers: CoreTeam[] = [
     name: 'ttimochan',
     github: 'ttimochan',
     title: "Let's start learning !",
-    desc: 'Mog 和 Mix-Space 文档作者与 PR 审核者',
+    desc: 'Mog 的文档作者 & PR 审核者 & CI/CD',
   },
   {
     avatar: `https://github.com/origami-tech.png`,
