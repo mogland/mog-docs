@@ -9,7 +9,7 @@
     "preview-https": "pnpm run build && serve .vitepress/dist"
   },
   "dependencies": {
-    "@vueuse/core": "9.2.0",
+    "@vueuse/core": "9.3.0",
     "jiti": "1.16.0",
     "vitepress": "1.0.0-alpha.16",
     "vue": "latest"
