@@ -1,5 +1,5 @@
 ---
-title: 主要功能 | 快速起步
+title: 主要功能 | 指南
 outline: deep
 ---
 
