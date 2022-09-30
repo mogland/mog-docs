@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:06:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-12 16:27:29
+ * @LastEditTime: 2022-09-30 23:15:59
  * Coding With IU
  */
 import contributorNames from './contributor-names.json'
@@ -44,6 +44,7 @@ export const contributors = (contributorNames as string[]).reduce((acc, name) =>
 const createLinks = (tm: CoreTeam): CoreTeam => {
   tm.links = [
     { icon: 'github', link: `https://github.com/${tm.github}` },
+    ...(tm.twitter ? [{ icon: 'twitter', link: `https://twitter.com/${tm.twitter}` }] : []),
   ]
   return tm
 }
@@ -77,12 +78,14 @@ const plainTeamMembers: CoreTeam[] = [
     avatar: `https://github.com/origami-tech.png`,
     name: 'Origami',
     github: 'origami-tech',
+    title: 'Salted fish',
     desc: 'Mog 核心协助开发者 & 项目重要赞助者'
   },
   {
     avatar: `https://github.com/reborn1028.png`,
     name: 'Guaguamiao',
     github: 'reborn1028',
+    title: '(๑• . •๑)',
     desc: 'Mog 核心协助开发者 & 主业 C# 开发者'
   },
   {
