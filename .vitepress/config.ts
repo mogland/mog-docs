@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-12 15:41:16
+ * @LastEditTime: 2022-09-30 23:09:06
  * Coding With IU
  */
 
@@ -43,7 +43,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/mogland/mog-docs/tree/main/:path',
-      text: 'Suggest changes to this page',
+      text: '为此页提供修改建议',
     },
 
     socialLinks: [
