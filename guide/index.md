@@ -63,7 +63,7 @@ Mog 仅推荐在 **Linux** 系统上使用，Windows 系统上的使用可能会
 如果你对 **Docker, Docker Compose, NodeJS, npm-script, git** 等技术不熟悉，建议先学习相关知识。文档中不会对这些技术进行详细介绍，且若由于不熟悉这些技术导致的问题，**我们将不会提供技术支持**。
 :::
 
-## 配置 Mog Core `[Preview Feature]`
+## 配置 Mog Core  <Badge text="WIP" color="gray" />
 
 Mog 的主要优势之一是它可以弹性组装服务。只要你的条件允许，你可以将服务部署至不同的终端中，但一般你只需部署到同一个终端上即可。但是当你需要配置网关连接服务的IP时（也就是当你将服务部署到了不同的终端时）你需要对 Core 进行配置
 
