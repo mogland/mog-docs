@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-01 16:47:54
+ * @LastEditTime: 2022-10-01 18:07:42
  * Coding With IU
  */
 
@@ -30,6 +30,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: "https://mog.js.org/logo.svg" }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
+    ['script', { async: "", defer: "", 'data-website-id': 'db355c05-e3d6-4e4c-a813-fccbc15e39b0', src: 'https://umami.iucky.cn/umami.js' }],
   ],
   lastUpdated: true,
   markdown: {

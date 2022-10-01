@@ -1,5 +1,6 @@
 {
   "name": "docs",
+  "version": "2.0.0-alpha.0",
   "private": true,
   "scripts": {
     "dev": "vitepress dev  --port 3333 --open",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "@vueuse/core": "9.3.0",
+    "@vueuse/head": "^0.8.0",
     "jiti": "1.16.0",
     "vitepress": "1.0.0-alpha.17",
     "vue": "latest"
