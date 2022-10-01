@@ -23,7 +23,7 @@
     "esno": "0.16.3",
     "fast-glob": "3.2.12",
     "https-localhost": "4.7.1",
-    "pathe": "0.3.7",
+    "pathe": "0.3.8",
     "unocss": "0.45.26",
     "unplugin-vue-components": "0.22.7",
     "vite": "3.1.0",
