@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-09-30 23:09:06
+ * @LastEditTime: 2022-10-01 16:47:54
  * Coding With IU
  */
 
@@ -70,6 +70,10 @@ export default defineConfig({
             {
               text: '主要功能',
               link: '/guide/features',
+            },
+            {
+              text: '跟其他的博客系统进行对比',
+              link: '/guide/compare',
             }
           ],
         },
