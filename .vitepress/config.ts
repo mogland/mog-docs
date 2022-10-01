@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-01 18:07:42
+ * @LastEditTime: 2022-10-02 00:45:21
  * Coding With IU
  */
 
@@ -53,6 +53,19 @@ export default defineConfig({
 
     nav: [
       { text: '指南', link: '/guide/' },
+      { text: '生态系统', items: [
+        { text: '评论组件', items: [
+          { text: 'Mog-Comments-WC', link: 'https://github.com/mogland/mog-comments-wc' },
+          { text: 'Mog-Comments-React', link: 'https://github.com/mogland/mog-comments-react' },
+        ]},
+        { text: '前端程序', items: [
+          { text: 'Mog-Theme-Tiny', link: 'https://github.com/mogland/mog-theme-tiny' },
+          { text: 'Mog-Theme-Single', link: 'https://github.com/mogland/mog-theme-Single' },
+        ]},
+        { text: '官方与社区', items: [
+          { text: 'Awesome-Mog', link: 'https://github.com/mogland/awesome-mog' },
+        ]}
+      ]}
     ],
 
     sidebar: {
@@ -78,6 +91,15 @@ export default defineConfig({
             }
           ],
         },
+        {
+          text: '进阶安装',
+          items: [
+            {
+              text: '自定义配置 Mog Core',
+              link: '/install/',
+            }
+          ],
+        }
       ]
     },
 
