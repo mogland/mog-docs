@@ -5,7 +5,7 @@ specifiers:
   '@unocss/reset': 0.45.26
   '@vitejs/plugin-vue': latest
   '@vueuse/core': 9.3.0
-  '@vueuse/head': ^0.8.0
+  '@vueuse/head': 0.8.0
   esno: 0.16.3
   fast-glob: 3.2.12
   https-localhost: 4.7.1
