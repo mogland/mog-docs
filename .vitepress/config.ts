@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-02 08:09:46
+ * @LastEditTime: 2022-10-02 08:23:34
  * Coding With IU
  */
 
@@ -127,7 +127,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the AGPLv3 License.',
-      copyright: 'Copyright © 2021-PRESENT Wibus and NEXT contributors',
+      copyright: 'Copyright © 2021-PRESENT Wibus and Mog contributors',
     },
   },
 })
