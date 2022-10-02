@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-02 08:23:34
+ * @LastEditTime: 2022-10-02 08:26:29
  * Coding With IU
  */
 
@@ -65,7 +65,13 @@ export default defineConfig({
         { text: '官方与社区', items: [
           { text: 'Awesome-Mog', link: 'https://github.com/mogland/awesome-mog' },
         ]}
-      ]}
+      ]},
+      {
+        text: '关于',
+        items: [  
+          { text: '版本发布', link: '/about/releases' },
+        ]
+      }
     ],
 
     sidebar: {
