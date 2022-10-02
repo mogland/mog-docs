@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-02 00:45:21
+ * @LastEditTime: 2022-10-02 07:51:25
  * Coding With IU
  */
 
@@ -98,6 +98,15 @@ export default defineConfig({
               text: '自定义配置 Mog Core',
               link: '/install/',
             }
+          ],
+        },
+        {
+          text: '配置',
+          items: [
+            {
+              text: '配置索引',
+              link: '/config/',
+            },
           ],
         }
       ]

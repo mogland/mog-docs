@@ -35,15 +35,7 @@ node dist/apps/<service-name>/main.js
 
 当你将服务部署到了不同的终端时，你需要对 Mog Core 的网关层进行配置。
 
-目前支持配置的字段有：
-
-- `userService` - 用户服务
-  - `userService_host` - 用户服务部署的主机地址，可以为 IP， 也可以为域名
-- `pageService` - 文章等模块服务
-  - `pageService_host` - 服务部署的主机地址，可以为 IP， 也可以为域名
-- `core` - 网关层
-  - `core_port` - 网关层公开端口
-  - `core_allow_origins` - 网关层允许的跨域来源，**不可以为 `*`**，使用 `,` 进行分隔
+目前支持配置的字段可以查阅 [配置索引](/install/)
 
 我们同样支持 YAML 格式的配置文件，你可以在启动的文件夹下创建 `core.yml` 文件，然后将配置写入其中
 
@@ -110,3 +102,5 @@ node dist/apps/core/main.js \
 你可以在此处检查你的配置正确或否
 
 :::
+
+更多配置项请查阅 [配置索引](/install/)
