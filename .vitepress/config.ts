@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-02 07:51:25
+ * @LastEditTime: 2022-10-02 08:09:46
  * Coding With IU
  */
 
@@ -99,6 +99,19 @@ export default defineConfig({
               link: '/install/',
             }
           ],
+        },
+        {
+          text: '迁移指南',
+          items: [
+            {
+              text: '升级版本',
+              link: '/migrate/',
+            },
+            {
+              text: '从其他博客系统迁移',
+              link: '/migrate/from-other',  
+            },
+          ]
         },
         {
           text: '配置',
