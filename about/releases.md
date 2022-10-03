@@ -1,6 +1,7 @@
 ---
 title: 版本发布 | 关于
 outline: deep
+sidebar: false
 ---
 
 <script setup>

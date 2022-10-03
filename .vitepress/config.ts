@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-02 08:26:29
+ * @LastEditTime: 2022-10-03 18:38:40
  * Coding With IU
  */
 
@@ -69,7 +69,9 @@ export default defineConfig({
       {
         text: '关于',
         items: [  
+          { text: '常见问题', link: '/about/faq' },
           { text: '版本发布', link: '/about/releases' },
+          { text: '行为准则', link: '/about/code-of-conduct' },
         ]
       }
     ],
