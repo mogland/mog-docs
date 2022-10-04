@@ -7,9 +7,9 @@ sidebar: false
 
 ## 谁在维护 Mog？
 
-Mog 是一个独立的社区驱动的项目。它是由 [Wibus](https://github.com/wibus-wee) 在 2021 年作为其个人项目创建的，原身为 Golden Space / NEXT Space。如今，Mog 由来自于全国各地的志愿者们维护。
+Mog 是一个独立的社区驱动的项目。它是由 [Wibus](https://github.com/wibus-wee) 在 2021 年作为其个人项目创建的，原身为 Golden Space / NEXT Space，极大的受到了 [Mix Space](https://github.com/mx-space) 的影响。如今，Mog 由来自于全国各地的志愿者们维护。
 
-自 2021 年以来，Mog 的发展主要是通过爱❤️和热情来驱动的。如果您觉得 Mog 不错的话，请考虑赞助我们，以支持 Mog 的发展！
+自 2021 年以来，Mog 的发展主要是通过爱 ❤️ 和热情来驱动的。如果您觉得 Mog 不错的话，请考虑赞助我们，以支持 Mog 的发展！
 
 > 赞助事项请发送邮件至 [wibus@qq.com](mailto:wibus@qq.com)。
 
@@ -72,7 +72,7 @@ Mog 的目标是提供一个**可靠、健全**的博客系统，我们会尽可
 
 ## Mog 相比于 Mix Space 究竟如何？
 
-讲真的，Mog 和 Mix Space 乃至于很多的博客系统，都没有可比性，因为我们的**道路不同**。Mog 和 Mix Space 有很多的相似之处，**Mog 是 Mix Space 的儿子**，如果没有 Mix Space，Mog 也不会诞生。Mog Team 永远对 Mix Space 感激不尽，保持崇高的敬意。
+讲真的，Mog 和 Mix Space 乃至于很多的博客系统，都没有可比性，因为我们的**道路不同**。Mog 和 [Mix Space](https://github.com/mx-space) 有很多的相似之处，**Mog 是 [Mix Space](https://github.com/mx-space) 的儿子，极大的受到了 [Mix Space](https://github.com/mx-space) 的影响**，如果没有 Mix Space，Mog 也不会诞生。Mog Team 永远对 Mix Space 感激不尽，保持崇高的敬意。
 
 如果真的硬要描述区别，或许我们能做的比 Mix Space 更好的，只有在模块化上，Mog 会更加的灵活，可以向上堆积功能，也可以向下拆分功能。
 
