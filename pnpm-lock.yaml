@@ -5,7 +5,7 @@ specifiers:
   '@unocss/reset': 0.45.26
   '@vitejs/plugin-vue': latest
   '@vueuse/core': 9.3.0
-  '@vueuse/head': 0.9.4
+  '@vueuse/head': 0.9.6
   esno: 0.16.3
   fast-glob: 3.2.12
   https-localhost: 4.7.1
@@ -21,7 +21,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': 9.3.0_vue@3.2.40
-  '@vueuse/head': 0.9.4_vue@3.2.40
+  '@vueuse/head': 0.9.6_vue@3.2.40
   jiti: 1.16.0
   vitepress: 1.0.0-alpha.19
   vue: 3.2.40
@@ -1825,14 +1825,14 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/head/0.9.4_vue@3.2.40:
-    resolution: {integrity: sha512-fEKpYsOdHsb6jGzw5R4ugLojtZ1Duhuu3wScVv5fB1WQS+GTAe+hOKz4ABkZB+tFapIyWsX77toEHHkT45b2oA==}
+  /@vueuse/head/0.9.6_vue@3.2.40:
+    resolution: {integrity: sha512-R0vqBxZJ92V44g3JVyzT7POYmIJlw1KIeAIly5C9xOerN7rqyAaX9PppLKRKHCeVVxHXOih2Jm2Gou9Xf0qlEw==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
       '@vueuse/shared': 9.3.0_vue@3.2.40
-      '@zhead/schema': 0.8.4
-      '@zhead/schema-vue': 0.8.4_vue@3.2.40
+      '@zhead/schema': 0.8.5
+      '@zhead/schema-vue': 0.8.5_vue@3.2.40
       vue: 3.2.40
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -1851,27 +1851,27 @@ packages:
       - vue
     dev: false
 
-  /@zhead/schema-raw/0.8.4:
-    resolution: {integrity: sha512-MCp0kFDHRW5zi+XIaGxiXGTjJ0XBttJHL6kWIrJQ+2WpZP4evV5zKOoRwMIUGSir+zaErd7tC5LUpjiWHzbjZg==}
+  /@zhead/schema-raw/0.8.5:
+    resolution: {integrity: sha512-Aq+9mksf5zbtj7HYluT6PVyfpQ6z7mja9MzjFxg76Vt+Q9i0oL1XN6ZYaCXImWRafwbyAxjFQ5aUCVyFn79OpA==}
     dependencies:
-      '@zhead/schema': 0.8.4
+      '@zhead/schema': 0.8.5
     dev: false
 
-  /@zhead/schema-vue/0.8.4_vue@3.2.40:
-    resolution: {integrity: sha512-K1Jek2rLUwqGH6txt1CpoliKcbcyU9KO7G+761baexmeEFCnaBAhDfFfMjtjaPWCrtXLjLgqo9AWpP7GLc/fug==}
+  /@zhead/schema-vue/0.8.5_vue@3.2.40:
+    resolution: {integrity: sha512-6aXjYy3fZVeYBLrHcJQqzqwzC/2tafRO5UxZEgBHnryRnzeLNZV6nTptDvIPWiJObMoJTK21vbg3gkfLNQg84g==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
       '@vueuse/shared': 9.3.0_vue@3.2.40
-      '@zhead/schema': 0.8.4
-      '@zhead/schema-raw': 0.8.4
+      '@zhead/schema': 0.8.5
+      '@zhead/schema-raw': 0.8.5
       vue: 3.2.40
     transitivePeerDependencies:
       - '@vue/composition-api'
     dev: false
 
-  /@zhead/schema/0.8.4:
-    resolution: {integrity: sha512-XbnO9qcZJf8HS0azwERe0TVVqLAoKHOjJWMunYa5uFb1hNoD67JOC0oYtcJxfvkrCkUmhjtspiXLfKngIMDLIQ==}
+  /@zhead/schema/0.8.5:
+    resolution: {integrity: sha512-1S3Otr2zpl1zwP72dNseVXQNG9tnTQ6hHUEUYwINvBjRj6bHcUwdE+Itc9OLxnGAJT/7p8P7GHGo5sshXJNJsA==}
     dev: false
 
   /accepts/1.3.8:

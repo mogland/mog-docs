@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@vueuse/core": "9.3.0",
-    "@vueuse/head": "0.9.4",
+    "@vueuse/head": "0.9.6",
     "jiti": "1.16.0",
     "vitepress": "1.0.0-alpha.19",
     "vue": "latest"
