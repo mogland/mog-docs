@@ -50,12 +50,6 @@ pnpm start:<service-name>
 pnpm start:core
 ```
 
-当你成功启动 core 的时候，你应该可以看到类似于如下的内容：
-
-<summary></summary>
-
-
-
 :::info 提示
 
 Mog 仅推荐在 **Linux** 系统上使用，Windows 系统上的使用可能会出现一些问题。
