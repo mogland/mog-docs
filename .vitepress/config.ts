@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-05 22:48:31
+ * @LastEditTime: 2022-10-05 23:15:44
  * Coding With IU
  */
 
@@ -63,8 +63,8 @@ export default defineConfigWithTheme<Config>({
           { text: 'Awesome-Mog', link: 'https://github.com/mogland/awesome-mog' },
         ]},
         { text: '核心部分', items: [
-          { text: 'Mog-core', link: 'https://github.com/mogland/core' },
-          { text: 'Mog-console', link: 'https://github.com/mogland/console' },
+          { text: 'Mog-Core', link: 'https://github.com/mogland/core' },
+          { text: 'Mog-Console', link: 'https://github.com/mogland/console' },
         ]},
         { text: '评论组件', items: [
           { text: 'Mog-Comments-WC', link: 'https://github.com/mogland/mog-comments-wc' },
