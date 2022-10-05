@@ -10,7 +10,7 @@ Mog 是一个基于 Nest.js 的前后端分离博客系统，采用了微服务�
 
 你可以在 [为什么选择 Mog？](/guide/why) 中了解有关此项目背后的想法。
 
-## 在线试用 Mog
+## 在线试用 Mog <Badge text="Feature Preview" color="gray" />
 
 你 ~~[暂时还不可以在线尝试 Mog](#)~~。它是 Mog 的后台系统 Demo，你可以在这里体验 Mog 的后台系统，当然，它自然是受到一定的限制的。
 
