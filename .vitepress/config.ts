@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-05 21:26:00
+ * @LastEditTime: 2022-10-05 22:48:31
  * Coding With IU
  */
 
@@ -40,12 +40,11 @@ export default defineConfigWithTheme<Config>({
     ['script', { async: "", defer: "", 'data-website-id': 'db355c05-e3d6-4e4c-a813-fccbc15e39b0', src: 'https://umami.iucky.cn/umami.js' }],
   ],
   lastUpdated: true,
-  // markdown: {
-  //   theme: {
-  //     light: 'vitesse-light',
-  //     dark: 'vitesse-dark',
-  //   },
-  // },
+  markdown: {
+    config: (md) => {
+      md.use(require('markdown-it-task-lists'))
+    }
+  },
   themeConfig: {
 
     editLink: {
@@ -81,6 +80,7 @@ export default defineConfigWithTheme<Config>({
         text: '关于',
         items: [  
           { text: '常见问题', link: '/about/faq' },
+          { text: 'RoadMap', link: '/about/roadmap' },
           { text: '版本发布', link: '/about/releases' },
           { text: '行为准则', link: '/about/code-of-conduct' },
         ]
