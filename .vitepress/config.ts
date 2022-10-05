@@ -3,15 +3,22 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-05 08:51:56
+ * @LastEditTime: 2022-10-05 21:26:00
  * Coding With IU
  */
 
-import { defineConfig } from 'vitepress'
+
+import type { Config } from '@vue/theme'
+//@ts-ignore
+import baseConfig from '@vue/theme/config'
+import { defineConfigWithTheme } from 'vitepress'
 
 import { teamMembers } from './contributors'
+import { NavbarFix } from './plugins/navbar'
 
-export default defineConfig({
+export default defineConfigWithTheme<Config>({
+  extends: baseConfig,
+
   lang: "zh-CN",
   title: "Mog",
   description: "一款弹性的模块化 CMS 博客系统",
@@ -33,17 +40,16 @@ export default defineConfig({
     ['script', { async: "", defer: "", 'data-website-id': 'db355c05-e3d6-4e4c-a813-fccbc15e39b0', src: 'https://umami.iucky.cn/umami.js' }],
   ],
   lastUpdated: true,
-  markdown: {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark',
-    },
-  },
+  // markdown: {
+  //   theme: {
+  //     light: 'vitesse-light',
+  //     dark: 'vitesse-dark',
+  //   },
+  // },
   themeConfig: {
-    logo: '/logo.svg',
 
     editLink: {
-      pattern: 'https://github.com/mogland/mog-docs/tree/main/:path',
+      repo: 'mogland/mog-docs',
       text: '为此页提供修改建议',
     },
 
@@ -139,7 +145,10 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the AGPLv3 License.',
+      license: {
+        text: 'AGPLv3 License',
+        link: 'https://www.gnu.org/licenses/agpl-3.0.html',
+      },
       copyright: 'Copyright © 2021-PRESENT Wibus and Mog contributors',
     },
   },

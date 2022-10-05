@@ -3,21 +3,23 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:13:45
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-03 18:33:17
+ * @LastEditTime: 2022-10-05 19:03:08
  * Coding With IU
  */
 import { h } from 'vue'
-import Theme from 'vitepress/theme'
+// import Theme from 'vitepress/theme'
+import { VPTheme } from '@vue/theme'
 
 import '../style/main.css'
 import '../style/vars.css'
 import 'uno.css'
-import HomePage from '../components/HomePage.vue'
+// import HomePage from '../components/HomePage.vue'
+
 // import { useRouter } from 'vitepress'
 // import { createHead } from '@vueuse/head'
 
 export default {
-  ...Theme,
+  ...VPTheme,
   Layout() {
 
     // const router = useRouter()
@@ -34,8 +36,8 @@ export default {
     //   { immediate: true }
     // )
 
-    return h(Theme.Layout, null, {
-      'home-features-after': () => h(HomePage),
+    return h(VPTheme.Layout, null, {
+      // 'home-features-after': () => h(HomePage),
     })
   },
   // enhanceApp({ app }: { app: App }) {
