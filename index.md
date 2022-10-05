@@ -1,6 +1,7 @@
 ---
 layout: home
 sidebar: false
+page: true
 
 hero:
   name: Mog
@@ -33,3 +34,5 @@ features:
   - title: 评论系统
     details: Mog 提供了几个简单的评论模块，为前端项目开发助力。
 ---
+
+<HomePage />
