@@ -143,4 +143,10 @@ export default defineConfig({
       copyright: 'Copyright © 2021-PRESENT Wibus and Mog contributors',
     },
   },
+
+  vite: {
+    plugins: [
+      NavbarFix(),
+    ]
+  }
 })
