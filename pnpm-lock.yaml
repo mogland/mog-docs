@@ -4,14 +4,14 @@ specifiers:
   '@iconify-json/carbon': 1.1.8
   '@unocss/reset': 0.45.26
   '@vitejs/plugin-vue': latest
-  '@vue/theme': ^1.2.2
+  '@vue/theme': 1.2.2
   '@vueuse/core': 9.3.0
   '@vueuse/head': 0.9.6
   esno: 0.16.3
   fast-glob: 3.2.12
   https-localhost: 4.7.1
   jiti: 1.16.0
-  markdown-it-task-lists: ^2.1.1
+  markdown-it-task-lists: 2.1.1
   pathe: 0.3.8
   unocss: 0.45.26
   unplugin-vue-components: 0.22.8
