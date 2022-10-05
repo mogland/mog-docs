@@ -21,7 +21,13 @@ const features = [
   }
 ]
 
-
+const friends = [
+  {
+    "name": "RZ.SB",
+    "link": "https://rz.sb",
+    "image": "rz.sb.png"
+  }
+]
 
 </script>
 
@@ -75,10 +81,85 @@ const features = [
       </main>
     </div>
   </div>
+
+  <div class="content">
+    <div class="content-container">
+      <main class="main">
+        <div class="vp-doc" flex flex-col items-center mt-10>
+          <h2 id="meet-the-team" op50 font-normal p="t-10 b-2">
+            来自全国各地朋友们的选择
+          </h2>
+          <div class="sponsor-container platinum landing">
+
+            <span v-for="friend in friends" :key="friend.name">
+              <a :href="friend.link" class="sponsor-item" rel="sponsored noopener" target="_blank">
+              <picture>
+                <img :src="friend.image" :alt="friend.name" />
+              </picture>
+            </a>
+            </span>
+            
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
 </template>
 
 
 <style scoped>
+
+.dark .landing .sponsor-item {
+    background-color: var(--vt-c-bg-soft);
+}
+
+.dark .aside .sponsor-item img, .dark .landing .sponsor-item img {
+    filter: grayscale(1) invert(1);
+}
+
+.dark .landing .sponsor-item:hover {
+    color: var(--vt-c-indigo);
+    background-color: var(--vt-c-white-mute);
+}
+
+.dark .sponsor-item:hover img {
+    filter: none;
+}
+
+.sponsor-item img {
+    transition: filter .2s ease;
+}
+.sponsor-item img {
+    max-width: calc(var(--max-width) - 30px);
+    max-height: calc(var(--max-width) / 2 - 20px);
+}
+
+.sponsor-item {
+    margin: 2px 0;
+    background-color: var(--vt-c-white-soft);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    transition: background-color .2s ease;
+    height: calc(var(--max-width) / 2 - 6px);
+}
+
+.sponsor-container {
+    margin-bottom: 3em;
+}
+.sponsor-container.platinum{
+    --max-width: 240px;
+}
+.sponsor-container{
+    --max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(var(--max-width),1fr));
+    column-gap: 4px;
+}
+
+
 .VPFeature {
   border: 1px solid var(--vp-c-bg-soft);
   border-radius: 12px;
