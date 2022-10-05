@@ -6,6 +6,23 @@ sidebar: false
 
 # RoadMap
 
+## Mog Core v2
+
+- [X] 基本框架 ( PR in https://github.com/mogland/core/pull/309 )
+- [X] 数据库模块 ( PR in https://github.com/mogland/core/pull/309 ) <Badge text="Library" color="green" /> 
+- [X] 授权模块 ( PR in https://github.com/mogland/core/pull/309 ) <Badge text="Library" color="green" /> 
+- [X] 配置模块 ( PR in https://github.com/mogland/core/pull/336 ) <Badge text="Library" color="green" /> 
+- [X] 用户服务模块 ( PR in https://github.com/mogland/core/pull/348 ) <Badge text="Core & Service" color="blue" /> 
+- [x] 分类 / 标签 + 文章 / 页面的服务模块 ( PR in https://github.com/mogland/core/pull/363 )  <Badge text="Core & Service" color="blue" />  
+- [ ] 基本评论模块 ( PR in https://github.com/mogland/core/pull/404 ) <Badge text="Core" color="red" />
+- [ ] ~~评论服务模块~~ <Badge text="Core & Service & Gateway" color="gray" /> （Waiting For RFC Document )
+- [x] 数据聚合模块 ( PR in https://github.com/mogland/core/pull/396 ) <Badge text="Core" color="red" />
+- [ ] ~~友链服务模块~~ <Badge text="Core & Service & Gateway" color="gray" />（ Waiting For RFC Document )
+- [ ] 基本友链模块 <Badge text="Core" color="red" />
+- [ ] Markdown Render / Processer <Badge text="Core & Service & Gateway" color="gray" /> 
+- [ ] Communication (Like Email Service) <Badge text="Core & Service" color="blue" /> 
+- [ ] 备份服务模块 <Badge text="Core & Service" color="blue" /> 
+
 ## Mog Admin Console Dashboard v2
 
 ### Theme Overrides
