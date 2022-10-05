@@ -65,3 +65,18 @@ sidebar: false
 - [X] `Tooltip` - by **wibus-wee** [<samp>(70a36)</samp>](https://github.com/mogland/console/commit/70a36d3)
 - [X] `TreeView` - by **wibus-wee** [<samp>(db6f4)</samp>](https://github.com/mogland/console/commit/db6f4e2)
 - [X] `Typography` - by **wibus-wee** [<samp>(f0fe1)</samp>](https://github.com/mogland/console/commit/f0fe1c7)
+
+### Pages
+
+- [ ] Index
+- [ ] Login
+- [ ] Register
+- [ ] Dashboard
+- [ ] Settings
+- [ ] Profile
+- [ ] Users
+- [ ] User
+- [ ] Posts
+- [ ] Post
+- [ ] NotFound
+- [ ] Init
