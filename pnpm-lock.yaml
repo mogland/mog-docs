@@ -11,6 +11,7 @@ specifiers:
   fast-glob: 3.2.12
   https-localhost: 4.7.1
   jiti: 1.16.0
+  markdown-it-task-lists: ^2.1.1
   pathe: 0.3.8
   unocss: 0.45.26
   unplugin-vue-components: 0.22.8
@@ -25,6 +26,7 @@ dependencies:
   '@vueuse/core': 9.3.0_vue@3.2.40
   '@vueuse/head': 0.9.6_vue@3.2.40
   jiti: 1.16.0
+  markdown-it-task-lists: 2.1.1
   vitepress: 1.0.0-alpha.19
   vue: 3.2.40
 
@@ -3226,6 +3228,10 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
     dev: true
+
+  /markdown-it-task-lists/2.1.1:
+    resolution: {integrity: sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==}
+    dev: false
 
   /mdn-data/2.0.28:
     resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
