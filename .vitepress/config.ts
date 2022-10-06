@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-05 23:15:44
+ * @LastEditTime: 2022-10-06 10:30:04
  * Coding With IU
  */
 
@@ -116,6 +116,10 @@ export default defineConfigWithTheme<Config>({
             {
               text: '自定义配置 Mog Core',
               link: '/install/',
+            },
+            {
+              text: '自主构建',
+              link: '/install/build',
             }
           ],
         },

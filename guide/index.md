@@ -16,39 +16,6 @@ Mog 是一个基于 Nest.js 的前后端分离博客系统，采用了微服务�
 
 ## 将 Mog Core 安装到服务器
 
-克隆 git 仓库，其中 `core` 为 Mog 核心 必须安装
-
-```bash
-git clone https://github.com/mogland/core.git
-```
-
-使用 pnpm 安装项目依赖
-
-```bash
-pnpm install
-```
-
-使用 NestJS CLI 命令构建你需要的服务
-
-```bash
-pnpm build:<service-name>
-# 比如说
-pnpm build:core
-```
-
-目前支持的 `service-name` 有：
-
-- `core` - 网关层 **（必须构建）**
-- `user-service` - 用户服务模块 **（必须构建）**
-- `page-service` - 文章页面分类服务模块 **（必须构建）**
-
-使用 NestJS CLI 命令启动你已构建完成的服务
-
-```bash
-pnpm start:<service-name>
-# 比如说
-pnpm start:core
-```
 
 :::info 提示
 
