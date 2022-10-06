@@ -66,6 +66,92 @@ sidebar: false
 - [X] `TreeView` - by **wibus-wee** [<samp>(db6f4)</samp>](https://github.com/mogland/console/commit/db6f4e2)
 - [X] `Typography` - by **wibus-wee** [<samp>(f0fe1)</samp>](https://github.com/mogland/console/commit/f0fe1c7)
 
+### Layouts
+
+- [x] Main
+  - [x] MainFooter
+  - [x] MainHeader
+  - [x] Menu
+    - [x] Desktop
+    - [x] Mobile
+    - [x] Config
+
+- [ ] Dashboard
+  - [ ] Header
+    - [ ] AccountPopover
+    - [ ] ContactsPopover
+    - [ ] LanguagePopover
+    - [ ] NotificationPopover
+    - [ ] Searchbar
+
+  - [ ] Navbar
+    - [ ] CollapseButton
+    - [ ] NavbarAccount
+    - [ ] NavbarDocs
+    - [ ] NavbarHorizontal
+    - [ ] NavbarVertical
+    - [ ] Config
+
+- [x] LogoOnly
+
+### Components
+
+- [ ] animate
+  - [ ] Dialog
+  - [ ] FabButton
+  - [ ] Features
+  - [ ] IconButton
+  - [ ] MotionContainer
+  - [ ] MotionInView
+  - [ ] MontionLazyContainer
+  - [ ] Text
+
+- [ ] carousel
+  - [ ] ArrowIndex
+  - [ ] Arrows
+  - [ ] Dots
+
+- [ ] chart
+- [ ] color-utils
+- [ ] editor
+- [ ] hook-form
+- [ ] map
+- [ ] mega-menu
+- [ ] nav-secition
+- [ ] settings
+- [ ] skeleton
+- [ ] upload
+- [ ] Avatar
+- [ ] BadgeStatus
+- [ ] Breadcrumbs
+- [ ] CopyClipboard
+- [ ] EmojiPicker
+- [ ] EmptyContent
+- [ ] HeaderBreadcrumbs
+- [ ] Iconify
+- [ ] Image
+- [ ] InputStyle
+- [ ] Label
+- [ ] LightboxModal
+- [ ] LoadingScreen
+- [ ] Logo
+- [ ] Markdown
+- [ ] MenuPopover
+- [ ] MyAvatar
+- [ ] NotistackProvider
+- [ ] Page
+- [ ] ProgressBar
+- [ ] RtlLayout
+- [ ] Scrollbar
+- [ ] ScrollToTop
+- [ ] SearchNotFound
+- [ ] SecialsButton
+- [ ] SvgIconStyle
+- [ ] TextIconLabel
+- [ ] TextMaxLine
+- [ ] ThemeColorPresets
+- [ ] ThemeLocalization
+
 ### Pages
 
 - [ ] Index
