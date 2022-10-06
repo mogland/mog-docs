@@ -68,14 +68,13 @@ sidebar: false
 
 ### Layouts
 
-- [x] Main
-  - [x] MainFooter
-  - [x] MainHeader
-  - [x] Menu
-    - [x] Desktop
-    - [x] Mobile
-    - [x] Config
-
+- [x] Main - by **wibus-wee**
+  - [x] MainFooter - by **wibus-wee**
+  - [x] MainHeader - by **wibus-wee**
+  - [x] Menu - by **wibus-wee**
+    - [x] Desktop - by **wibus-wee**
+    - [x] Mobile - by **wibus-wee**
+    - [x] Config - by **wibus-wee**
 - [ ] Dashboard
   - [ ] Header
     - [ ] AccountPopover
@@ -83,7 +82,6 @@ sidebar: false
     - [ ] LanguagePopover
     - [ ] NotificationPopover
     - [ ] Searchbar
-
   - [ ] Navbar
     - [ ] CollapseButton
     - [ ] NavbarAccount
@@ -91,8 +89,7 @@ sidebar: false
     - [ ] NavbarHorizontal
     - [ ] NavbarVertical
     - [ ] Config
-
-- [x] LogoOnly
+- [x] LogoOnly - by **wibus-wee**
 
 ### Components
 
@@ -105,12 +102,10 @@ sidebar: false
   - [ ] MotionInView
   - [ ] MontionLazyContainer
   - [ ] Text
-
 - [ ] carousel
   - [ ] ArrowIndex
   - [ ] Arrows
   - [ ] Dots
-
 - [ ] chart
 - [ ] color-utils
 - [ ] editor
