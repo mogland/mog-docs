@@ -68,13 +68,13 @@ sidebar: false
 
 ### Layouts
 
-- [x] Main - by **wibus-wee**
-  - [x] MainFooter - by **wibus-wee**
-  - [x] MainHeader - by **wibus-wee**
-  - [x] Menu - by **wibus-wee**
-    - [x] Desktop - by **wibus-wee**
-    - [x] Mobile - by **wibus-wee**
-    - [x] Config - by **wibus-wee**
+- [x] Main - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+  - [x] MainFooter - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+  - [x] MainHeader - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+  - [x] Menu - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+    - [x] Desktop - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+    - [x] Mobile - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
+    - [x] Config - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 - [ ] Dashboard
   - [ ] Header
     - [ ] AccountPopover
@@ -89,7 +89,7 @@ sidebar: false
     - [ ] NavbarHorizontal
     - [ ] NavbarVertical
     - [ ] Config
-- [x] LogoOnly - by **wibus-wee**
+- [x] LogoOnly - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 
 ### Components
 
