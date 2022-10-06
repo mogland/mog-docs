@@ -37,11 +37,11 @@ jobs:
             - recursive: true
               args: [--no-frozen-lockfile]
       - run: pnpm run build
-      - run: echo 'mog.js.org' > .vitepress/dist/CNAME
+      - run: echo 'mog.js.org' > src/.vitepress/dist/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: src/.vitepress/dist
     env:
       CI: true
