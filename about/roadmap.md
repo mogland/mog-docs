@@ -91,6 +91,18 @@ sidebar: false
     - [ ] Config
 - [x] LogoOnly - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 
+### Hooks
+
+- [X] `useLocales` - by **wibus-wee** [<samp>(621f4)</samp>](https://github.com/mogland/console/commit/621f4f9)
+- [X] `useAuth` - by **wibus-wee** [<samp>(34376)</samp>](https://github.com/mogland/console/commit/3437676)
+- [X] `useCollapseDrawer` - by **wibus-wee** [<samp>(f5abc)</samp>](https://github.com/mogland/console/commit/f5abccd)
+- [X] `useCountdown` - by **wibus-wee** [<samp>(3250d)</samp>](https://github.com/mogland/console/commit/3250da5)
+- [X] `useIsMountedRef` - by **wibus-wee** [<samp>(0d54a)</samp>](https://github.com/mogland/console/commit/0d54ab5)
+- [X] `useOffSetTop` - by **wibus-wee** [<samp>(e6cad)</samp>](https://github.com/mogland/console/commit/e6cadde)
+- [X] `useSettings` - by **wibus-wee**
+- [X] `useResponsive` - by **wibus-wee**
+- [X] `useLocalStorage` - by **wibus-wee**
+
 ### Components
 
 - [ ] animate
