@@ -3,11 +3,11 @@
   "version": "2.0.0-alpha.0",
   "private": true,
   "scripts": {
-    "dev": "vitepress dev  --port 3333 --open",
-    "build": "vitepress build  && node .vitepress/scripts/build-pwa.mjs",
-    "build-no-prefetch": "vitepress build  && node .vitepress/scripts/build-pwa.mjs",
-    "serve": "vitepress serve ",
-    "preview-https": "pnpm run build && serve .vitepress/dist"
+    "dev": "vitepress dev src --port 3333",
+    "build": "vitepress build src && node src/.vitepress/scripts/build-pwa.mjs",
+    "build-no-prefetch": "vitepress build src && node src/.vitepress/scripts/build-pwa.mjs",
+    "serve": "vitepress serve src",
+    "preview-https": "pnpm run build && serve src/.vitepress/dist"
   },
   "dependencies": {
     "@vue/theme": "1.2.2",

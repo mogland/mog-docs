@@ -6,6 +6,8 @@ sidebar: false
 
 # RoadMap
 
+目前我们正在开发的是 **v2.0** 版本，这个版本将会是一个全新的版本，我们将会在这个版本中引入更多的新特性, 你可以在此处查看我们的开发计划。
+
 ## Mog Core v2
 
 - [X] 基本框架 ( PR in [#309](https://github.com/mogland/core/pull/309) )
@@ -25,7 +27,19 @@ sidebar: false
 
 ## Mog Admin Console Dashboard v2
 
-### Theme Overrides
+### UI & Backend Hooks
+
+- [X] `useLocales` - by **wibus-wee** [<samp>(621f4)</samp>](https://github.com/mogland/console/commit/621f4f9)
+- [X] `useAuth` - by **wibus-wee** [<samp>(34376)</samp>](https://github.com/mogland/console/commit/3437676)
+- [X] `useCollapseDrawer` - by **wibus-wee** [<samp>(f5abc)</samp>](https://github.com/mogland/console/commit/f5abccd)
+- [X] `useCountdown` - by **wibus-wee** [<samp>(3250d)</samp>](https://github.com/mogland/console/commit/3250da5)
+- [X] `useIsMountedRef` - by **wibus-wee** [<samp>(0d54a)</samp>](https://github.com/mogland/console/commit/0d54ab5)
+- [X] `useOffSetTop` - by **wibus-wee** [<samp>(e6cad)</samp>](https://github.com/mogland/console/commit/e6cadde)
+- [X] `useSettings` - by **wibus-wee**
+- [X] `useResponsive` - by **wibus-wee**
+- [X] `useLocalStorage` - by **wibus-wee**
+
+### Theme & Components Overrides
 - [X] `Avatar` - by **wibus-wee** [<samp>(abd54)</samp>](https://github.com/mogland/console/commit/abd547b)
 - [X] `Backdrop` - by **wibus-wee** [<samp>(c5b77)</samp>](https://github.com/mogland/console/commit/c5b77dd)
 - [X] `Badge` - by **wibus-wee** [<samp>(09b26)</samp>](https://github.com/mogland/console/commit/09b26eb)
@@ -66,7 +80,7 @@ sidebar: false
 - [X] `TreeView` - by **wibus-wee** [<samp>(db6f4)</samp>](https://github.com/mogland/console/commit/db6f4e2)
 - [X] `Typography` - by **wibus-wee** [<samp>(f0fe1)</samp>](https://github.com/mogland/console/commit/f0fe1c7)
 
-### Layouts
+### UI Layouts
 
 - [x] Main - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
   - [x] MainFooter - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
@@ -77,7 +91,7 @@ sidebar: false
     - [x] Config - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 - [ ] Dashboard
   - [ ] Header
-    - [ ] AccountPopover - by **wibus-wee** [<samp>(d73aa)</samp>](https://github.com/mogland/console/commit/d73aad3)
+    - [X] AccountPopover - by **wibus-wee** [<samp>(d73aa)</samp>](https://github.com/mogland/console/commit/d73aad3)
     - [x] ContactsPopover - by **wibus-wee** [<samp>(b5f1e)</samp>](https://github.com/mogland/console/commit/b5f1e28)
     - [ ] LanguagePopover
     - [ ] NotificationPopover
@@ -91,19 +105,7 @@ sidebar: false
     - [ ] Config
 - [x] LogoOnly - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 
-### Hooks
-
-- [X] `useLocales` - by **wibus-wee** [<samp>(621f4)</samp>](https://github.com/mogland/console/commit/621f4f9)
-- [X] `useAuth` - by **wibus-wee** [<samp>(34376)</samp>](https://github.com/mogland/console/commit/3437676)
-- [X] `useCollapseDrawer` - by **wibus-wee** [<samp>(f5abc)</samp>](https://github.com/mogland/console/commit/f5abccd)
-- [X] `useCountdown` - by **wibus-wee** [<samp>(3250d)</samp>](https://github.com/mogland/console/commit/3250da5)
-- [X] `useIsMountedRef` - by **wibus-wee** [<samp>(0d54a)</samp>](https://github.com/mogland/console/commit/0d54ab5)
-- [X] `useOffSetTop` - by **wibus-wee** [<samp>(e6cad)</samp>](https://github.com/mogland/console/commit/e6cadde)
-- [X] `useSettings` - by **wibus-wee**
-- [X] `useResponsive` - by **wibus-wee**
-- [X] `useLocalStorage` - by **wibus-wee**
-
-### Components
+### UI Components
 
 - [ ] animate
   - [ ] Dialog
@@ -128,7 +130,7 @@ sidebar: false
 - [ ] settings
 - [ ] skeleton
 - [ ] upload
-- [ ] Avatar - by **wibus-wee** [<samp>(a7741)</samp>](https://github.com/mogland/console/commit/a774100)
+- [X] Avatar - by **wibus-wee** [<samp>(a7741)</samp>](https://github.com/mogland/console/commit/a774100)
 - [x] BadgeStatus - by **wibus-wee** [<samp>(bec28)</samp>](https://github.com/mogland/console/commit/bec2897)
 - [ ] Breadcrumbs
 - [ ] CopyClipboard
@@ -144,7 +146,7 @@ sidebar: false
 - [ ] Logo
 - [ ] Markdown
 - [x] MenuPopover - by **wibus-wee** [<samp>(9a5ab)</samp>](https://github.com/mogland/console/commit/9a5ab87)
-- [ ] MyAvatar - by **wibus-wee** [<samp>(7abe4)</samp>](https://github.com/mogland/console/commit/7abe44a)
+- [X] MyAvatar - by **wibus-wee** [<samp>(7abe4)</samp>](https://github.com/mogland/console/commit/7abe44a)
 - [ ] NotistackProvider
 - [ ] Page
 - [ ] ProgressBar
@@ -159,7 +161,7 @@ sidebar: false
 - [ ] ThemeColorPresets
 - [ ] ThemeLocalization
 
-### Pages
+### Console Pages
 
 - [ ] Index
 - [ ] Login
@@ -173,3 +175,7 @@ sidebar: false
 - [ ] Post
 - [ ] NotFound
 - [ ] Init
+
+## Mog FrontEnd Tiny v2
+
+TBD.

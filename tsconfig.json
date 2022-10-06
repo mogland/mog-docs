@@ -24,8 +24,8 @@
   },
   "include": [
     "./*.ts",
-    "./.vitepress/**/*.ts",
-    "./.vitepress/**/*.vue"
-  ],
+    "src/.vitepress/**/*.ts",
+    "src/.vitepress/**/*.vue"
+, "src/vite.config.ts"  ],
   "exclude": ["dist", "node_modules"]
 }
