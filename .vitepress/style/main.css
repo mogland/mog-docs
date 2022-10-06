@@ -35,7 +35,6 @@ html:not(.dark) [img-dark] {
 
 /* Overrides */
 
-
 .vt-menu-link {
   display: block;
   border-radius: 6px;
@@ -51,7 +50,11 @@ html:not(.dark) [img-dark] {
 
 .vt-menu-link:hover {
   color: var(--vp-c-brand);
-  background-color: var(--vp-c-bg-mute);
+  background-color: #f1f1f1;
+}
+
+.dark .vt-menu-link:hover {
+  background-color: #3a3a3a;
 }
 
 
