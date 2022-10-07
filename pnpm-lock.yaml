@@ -6,7 +6,7 @@ specifiers:
   '@vitejs/plugin-vue': latest
   '@vue/theme': 1.2.2
   '@vueuse/core': 9.3.0
-  '@vueuse/head': 0.9.6
+  '@vueuse/head': 0.9.7
   esno: 0.16.3
   fast-glob: 3.2.12
   https-localhost: 4.7.1
@@ -24,7 +24,7 @@ specifiers:
 dependencies:
   '@vue/theme': 1.2.2_vue@3.2.40
   '@vueuse/core': 9.3.0_vue@3.2.40
-  '@vueuse/head': 0.9.6_vue@3.2.40
+  '@vueuse/head': 0.9.7_vue@3.2.40
   jiti: 1.16.0
   markdown-it-task-lists: 2.1.1
   vitepress: 1.0.0-alpha.19
@@ -1854,8 +1854,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/head/0.9.6_vue@3.2.40:
-    resolution: {integrity: sha512-R0vqBxZJ92V44g3JVyzT7POYmIJlw1KIeAIly5C9xOerN7rqyAaX9PppLKRKHCeVVxHXOih2Jm2Gou9Xf0qlEw==}
+  /@vueuse/head/0.9.7_vue@3.2.40:
+    resolution: {integrity: sha512-zuU4qpDEVoDg/XY5phQWZY7/W4M6IoenaJMu5ZGY4plzOzBkkTwmq7jA6z9nxMYo2n1z5RaU5WL9ypZrZkQOjQ==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
