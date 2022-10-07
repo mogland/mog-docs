@@ -90,12 +90,12 @@ sidebar: false
     - [x] Mobile - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
     - [x] Config - by **wibus-wee** [<samp>(#58)</samp>](https://github.com/mogland/console/pull/58)
 - [ ] Dashboard
-  - [ ] Header
+  - [X] Header - by **wibus-wee** [<samp>(75886)</samp>](https://github.com/mogland/console/commit/75886eb)
     - [X] AccountPopover - by **wibus-wee** [<samp>(d73aa)</samp>](https://github.com/mogland/console/commit/d73aad3)
     - [x] ContactsPopover - by **wibus-wee** [<samp>(b5f1e)</samp>](https://github.com/mogland/console/commit/b5f1e28)
-    - [ ] LanguagePopover
-    - [ ] NotificationPopover
-    - [ ] Searchbar
+    - [ ] ~~LanguagePopover~~
+    - [X] NotificationPopover - by **wibus-wee** [<samp>(f2b67)</samp>](https://github.com/mogland/console/commit/f2b671c)
+    - [X] Searchbar - by **wibus-wee** [<samp>(fe1ae)</samp>](https://github.com/mogland/console/commit/fe1aead)
   - [ ] Navbar
     - [ ] CollapseButton
     - [ ] NavbarAccount
