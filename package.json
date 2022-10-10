@@ -12,7 +12,7 @@
   "dependencies": {
     "@vue/theme": "1.2.2",
     "@vueuse/core": "9.3.0",
-    "@vueuse/head": "0.9.7",
+    "@vueuse/head": "0.9.8",
     "jiti": "1.16.0",
     "markdown-it-task-lists": "2.1.1",
     "vitepress": "1.0.0-alpha.19",
