@@ -17,7 +17,7 @@ specifiers:
   unplugin-vue-components: 0.22.8
   vite: 3.1.6
   vite-plugin-pwa: 0.13.1
-  vitepress: 1.0.0-alpha.19
+  vitepress: 1.0.0-alpha.20
   vue: latest
   workbox-window: 6.5.4
 
@@ -27,7 +27,7 @@ dependencies:
   '@vueuse/head': 0.9.7_vue@3.2.40
   jiti: 1.16.0
   markdown-it-task-lists: 2.1.1
-  vitepress: 1.0.0-alpha.19
+  vitepress: 1.0.0-alpha.20
   vue: 3.2.40
 
 devDependencies:
@@ -1782,8 +1782,8 @@ packages:
       '@vue/compiler-dom': 3.2.40
       '@vue/shared': 3.2.40
 
-  /@vue/devtools-api/6.4.2:
-    resolution: {integrity: sha512-6hNZ23h1M2Llky+SIAmVhL7s6BjLtZBCzjIz9iRSBUsysjE7kC39ulW0dH4o/eZtycmSt4qEr6RDVGTIuWu+ow==}
+  /@vue/devtools-api/6.4.4:
+    resolution: {integrity: sha512-Ku31WzpOV/8cruFaXaEZKF81WkNnvCSlBY4eOGtz5WMSdJvX1v1WWlSMGZeqUwPtQ27ZZz7B62erEMq8JDjcXw==}
     dev: false
 
   /@vue/reactivity-transform/3.2.40:
@@ -4223,14 +4223,14 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/1.0.0-alpha.19:
-    resolution: {integrity: sha512-0FIUZB6JGXio7SELDDUkyQoMjmO/UAXqDXmznzOsBKsdZ3EHlyb6NaP/V/BMfN5S8+GV88ScbIL0jd/pDzkLBg==}
+  /vitepress/1.0.0-alpha.20:
+    resolution: {integrity: sha512-8WXPQbWsoAckdS9FqhZ8MQWLDhq6DQG8dhuEtwsZmPMYtl/ezRYWoV/8gJD0T0xUbz6O6vJ8Sddq7OvEwLFUFA==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.2.1
       '@docsearch/js': 3.2.1
       '@vitejs/plugin-vue': 3.1.2_vite@3.1.6+vue@3.2.40
-      '@vue/devtools-api': 6.4.2
+      '@vue/devtools-api': 6.4.4
       '@vueuse/core': 9.3.0_vue@3.2.40
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.11.1
