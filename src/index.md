@@ -35,4 +35,4 @@ features:
     details: Mog 提供了几个简单的评论模块，为前端项目开发助力。
 ---
 
-<HomePage />
+<!-- <HomePage /> -->
