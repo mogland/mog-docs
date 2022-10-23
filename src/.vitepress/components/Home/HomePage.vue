@@ -143,4 +143,25 @@ body {
 .VPContent {
   padding: 0 !important;
 }
+
+.VPTeamMembers.small .container {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 800px !important;
+}
+
+.VPTeamMembersItem.small .name {
+  font-size: 20px !important;
+  line-height: 1.0625;
+  /* letter-spacing: -0.009em; */
+  color: var(--label-primary-color);
+}
+.VPTeamMembersItem.small .title {
+  font-size: 16px !important;
+  line-height: 1.33341;
+  color: var(--label-tertiary-color);
+}
+.VPTeamMembersItem.small .desc {
+  font-size: 14px !important;
+  line-height: 1.42859;
+}
 </style>

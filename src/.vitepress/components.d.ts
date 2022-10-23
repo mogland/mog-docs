@@ -15,7 +15,7 @@ declare module '@vue/runtime-core' {
     HeroBanner: typeof import('./components/Home/HeroBanner.vue')['default']
     HomeHeader: typeof import('./components/Home/HomeHeader.vue')['default']
     HomePage: typeof import('./components/Home/HomePage.vue')['default']
-    'HomePage old': typeof import('./components/HomePage old.vue')['default']
+    HomePageOld: typeof import('./components/HomePageOld.vue')['default']
     HomeSection2: typeof import('./components/Home/HomeSection2.vue')['default']
     ListItem: typeof import('./components/ListItem.vue')['default']
     old: typeof import('./components/HomePage old.vue')['default']

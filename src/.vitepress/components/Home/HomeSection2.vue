@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { VPTeamMembers, VPTeamPageTitle } from 'vitepress/theme'
+import { teamMembers } from '../../contributors'
+</script>
+
 <template>
 
   <section class="home_section">
@@ -45,10 +50,18 @@
       <p class="description">我们对用户界面的设计将会朝着易于使用和提高效率的方向发展。</p>
     </div>
 
-
-
-
   </section>
+
+  <VPTeamPageTitle>
+    <template #title>
+      Our Team
+    </template>
+    <template #lead>
+      Mog 的开发团队由来自全国各地的开发者组成，他们中的一些人选择在下面展示出来。
+    </template>
+  </VPTeamPageTitle>
+
+  <VPTeamMembers size="small" :members="teamMembers" />  
 
 </template>
 
