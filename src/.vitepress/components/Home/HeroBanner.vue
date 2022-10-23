@@ -1,5 +1,7 @@
 <template>
-  <div class="banner_container">
+  <div class="banner_container" onclick="
+    window.open('/about/roadmap.html')
+  ">
     <div class="banner">
       <p>
         Mog is currently in development. Check out the roadmap.

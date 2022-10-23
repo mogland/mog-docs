@@ -25,7 +25,7 @@
     white-space: nowrap;
     font-size: 17px;
     line-height: 1.17648;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.022em;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     min-width: 28px;

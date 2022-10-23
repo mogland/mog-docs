@@ -21,6 +21,7 @@
               <a href="/guide/" target="_blank">Getting Started</a>
             </li>
           </ul>
+          <ButtonStarted text="Release Coming Soon" style="font-size: 10px;" />
         </div>
       </div>
 
