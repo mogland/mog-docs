@@ -1,3 +1,11 @@
+<!--
+ * @FilePath: /mog-docs/src/.vitepress/components/HomePage copy.vue
+ * @author: Wibus
+ * @Date: 2022-10-22 16:09:53
+ * @LastEditors: Wibus
+ * @LastEditTime: 2022-10-22 16:09:53
+ * Coding With IU
+-->
 <script setup lang="ts">
 import { VPTeamMembers } from 'vitepress/theme'
 import { teamMembers } from '../contributors'
