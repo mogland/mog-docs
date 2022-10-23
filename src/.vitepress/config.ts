@@ -1,9 +1,9 @@
 /*
- * @FilePath: /mog-docs/.vitepress/config.ts
+ * @FilePath: /mog-docs/src/.vitepress/config.ts
  * @author: Wibus
  * @Date: 2022-09-09 23:09:43
  * @LastEditors: Wibus
- * @LastEditTime: 2022-10-06 10:30:04
+ * @LastEditTime: 2022-10-23 21:39:56
  * Coding With IU
  */
 
