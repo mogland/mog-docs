@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/carbon': 1.1.8
-  '@unocss/reset': 0.45.29
+  '@unocss/reset': 0.45.30
   '@vitejs/plugin-vue': latest
   '@vue/theme': 1.2.2
   '@vueuse/core': 9.3.0
@@ -32,7 +32,7 @@ dependencies:
 
 devDependencies:
   '@iconify-json/carbon': 1.1.8
-  '@unocss/reset': 0.45.29
+  '@unocss/reset': 0.45.30
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
   esno: 0.16.3
   fast-glob: 3.2.12
@@ -1708,10 +1708,6 @@ packages:
     dependencies:
       '@unocss/core': 0.45.30
       '@unocss/preset-mini': 0.45.30
-    dev: true
-
-  /@unocss/reset/0.45.29:
-    resolution: {integrity: sha512-ytnKxyJdjvhjHrZ9yQUnQwiuL4hiXvjZUj88F2JkwgFJX6Y8jEz3V2xU1BPZNOv20/F6P1ngzEPRfrWHG8XG6A==}
     dev: true
 
   /@unocss/reset/0.45.30:
