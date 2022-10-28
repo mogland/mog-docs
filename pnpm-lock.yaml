@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify-json/carbon': 1.1.8
+  '@iconify-json/carbon': 1.1.9
   '@unocss/reset': 0.45.30
   '@vitejs/plugin-vue': latest
   '@vue/theme': 1.2.2
@@ -31,9 +31,9 @@ dependencies:
   vue: 3.2.41
 
 devDependencies:
-  '@iconify-json/carbon': 1.1.8
+  '@iconify-json/carbon': 1.1.9
   '@unocss/reset': 0.45.30
-  '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
+  '@vitejs/plugin-vue': 3.2.0_vite@3.1.8+vue@3.2.41
   esno: 0.16.3
   fast-glob: 3.2.12
   https-localhost: 4.7.1
@@ -1398,8 +1398,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@iconify-json/carbon/1.1.8:
-    resolution: {integrity: sha512-aSoMgvZyvIXadLbMXcfS+qy8CVxSExvvp8Vd/nCrupLFc0KLKSukRInnVNc63zaHqoe1NBf5xUrgfyRYYfaKWQ==}
+  /@iconify-json/carbon/1.1.9:
+    resolution: {integrity: sha512-O3geRhhnE9dDDC4oT6qwBs7sdc37R9UqftiG7BP8YVDw8OcXv8i95J0ZEkIfdOXFj1Wb6kC/Uu/6VTlAqotVXg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1765,8 +1765,8 @@ packages:
       - rollup
     dev: true
 
-  /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41:
-    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
+  /@vitejs/plugin-vue/3.2.0_vite@3.1.8+vue@3.2.41:
+    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
@@ -4287,7 +4287,7 @@ packages:
     dependencies:
       '@docsearch/css': 3.2.1
       '@docsearch/js': 3.2.1
-      '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
+      '@vitejs/plugin-vue': 3.2.0_vite@3.1.8+vue@3.2.41
       '@vue/devtools-api': 6.4.4
       '@vueuse/core': 9.3.1_vue@3.2.41
       body-scroll-lock: 4.0.0-beta.0
