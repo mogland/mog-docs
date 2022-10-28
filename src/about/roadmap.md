@@ -97,9 +97,9 @@ sidebar: false
     - [X] NotificationPopover - by **wibus-wee** [<samp>(f2b67)</samp>](https://github.com/mogland/console/commit/f2b671c)
     - [X] Searchbar - by **wibus-wee** [<samp>(fe1ae)</samp>](https://github.com/mogland/console/commit/fe1aead)
   - [ ] Navbar
-    - [ ] CollapseButton
-    - [ ] NavbarAccount
-    - [ ] NavbarDocs
+    - [X] CollapseButton - by **wibus-wee**
+    - [X] NavbarAccount - by **wibus-wee**
+    - [X] NavbarDocs - by **wibus-wee**
     - [ ] NavbarHorizontal
     - [ ] NavbarVertical
     - [ ] Config
