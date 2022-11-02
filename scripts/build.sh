@@ -14,3 +14,14 @@ cd ..
 cp -r mog.js.org/out/* dist/
 
 rm -rf mog.js.org
+
+# in blog
+git clone https://github.com/mogland/blog.git
+cd blog
+pnpm i
+pnpm run build
+cd ..
+mkdir -p dist/blog
+cp -r blog/dist/* dist/blog/
+
+rm -rf blog
