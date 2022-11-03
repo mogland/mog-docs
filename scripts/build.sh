@@ -20,9 +20,9 @@ git clone https://github.com/mogland/blog.git mog-blog
 cd mog-blog
 pnpm i
 pnpm run build
-cd ..
+cd .. 
 mkdir -p dist/blog
 cp -r mog-blog/.vitepress/dist/* dist/blog/
-cp -r dist/blog/assets dist/assets/
+cp -r dist/blog/assets/* dist/assets/
 
 rm -rf mog-blog
