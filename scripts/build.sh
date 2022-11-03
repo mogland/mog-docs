@@ -23,5 +23,6 @@ pnpm run build
 cd ..
 mkdir -p dist/blog
 cp -r blog/.vitepress/dist/* dist/blog/
+cp -r dist/blog/assets dist/assets/
 
 rm -rf blog
