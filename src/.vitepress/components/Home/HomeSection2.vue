@@ -24,7 +24,7 @@ import { teamMembers } from '../../contributors'
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
       </svg>
       <p class="title">弹性服务</p>
-      <p class="description">你可以随意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。</p>
+      <p class="description">你可以任意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。</p>
     </div>
 
     <div class="feature_item">
@@ -35,13 +35,13 @@ import { teamMembers } from '../../contributors'
         </path>
       </svg>
       <p class="title">自由软件</p>
-      <p class="description">Mog 是一个自由软件项目，在遵守 AGPL 3.0 许可证的情况下，你可以随意地分发，使用，二次修改。</p>
+      <p class="description">Mog 是一个自由软件项目，在遵守 AGPL-3.0 许可证的情况下，你可以自由地分发，使用，二次修改。</p>
     </div>
 
     <div class="feature_item">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
       <p class="title">可扩展 & 可自定义</p>
-      <p class="description">Mog 的服务都是可插拔的，你可以随意添加或者删除服务，而不需要担心其他服务的影响。</p>
+      <p class="description">Mog 的服务都是可插拔的，你可以任意添加或者删除服务，而不需要担心其他服务的影响。</p>
     </div>
 
     <div class="feature_item">
