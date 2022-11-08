@@ -13,7 +13,7 @@ import { teamMembers } from '../contributors'
 const features = [
   {
     "title": "弹性服务",
-    "details": "你可以随意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。"
+    "details": "你可以任意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。"
   },
   {
     "title": "主题市场  (WIP)",
