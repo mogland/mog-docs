@@ -1,1 +1,0 @@
-import{g as t,o as a,c as n,t as o,n as r}from"../app.7b1c8550.js";const _=t({__name:"Badge",props:{text:{type:String,required:!0},color:{type:String,default:"blue"}},setup(e){return(s,c)=>(a(),n("span",{class:r(["badge",e.color])},o(e.text),3))}});export{_};
