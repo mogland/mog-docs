@@ -2,10 +2,10 @@
 title: 自定义配置 Mog Core | 进阶安装
 ---
 
-# 自定义配置 Mog Core <Badge text="Feature Preview" color="gray" />
+# 自定义配置 Mog Core
 
 :::warning
-此功能仍然处于开发阶段，尚未上线。仅作为 Feature Preview。
+此功能与原本规划的具有一定区别，请注意文档的改变。
 :::
 
 Mog 的主要优势之一是它可以弹性组装服务。只要你的条件允许，你可以将服务部署至不同的终端中，但一般你只需部署到同一个终端上即可。但是当你需要配置网关连接服务的IP时（也就是当你将服务部署到了不同的终端时）你需要对 Core 进行配置
@@ -17,85 +17,94 @@ Mog 的主要优势之一是它可以弹性组装服务。只要你的条件允�
 
 我们提到「使用 NestJS CLI 命令启动你已构建完成的服务」使用的命令为
 
-```bash
-pnpm start:<service-name>
-```
-
-此命令等价为
 
 ```bash
-nest start <service-name>
-# 或
-node dist/apps/<service-name>/main.js
+node <server bundle storge path>
 ```
 
-当我们需要在启动 Mog 进行配置的时候，则需要「等价」的命令（当然使用 `pnpm` 也可以，如果你会的话），之后在后方携带 `--<arg_name>=<arg_value>` 格式的参数启动
+当我们需要在启动 Mog 进行配置的时候，则需要命令之后在后方携带 `--<arg_name>=<arg_value>` 格式的参数启动
 
 ## 配置 Core
 
 当你将服务部署到了不同的终端时，你需要对 Mog Core 的网关层进行配置。
 
-目前支持配置的字段可以查阅 [配置索引](/install/)
+目前支持配置的字段可以查阅 [配置索引](/config/)
 
 我们同样支持 YAML 格式的配置文件，你可以在启动的文件夹下创建 `core.yml` 文件，然后将配置写入其中
 
 ```yaml
-userService: # 用户服务
+user_service: # 用户服务
   host: http://localhost:3001 # 用户服务部署的主机地址，可以为 IP， 也可以为域名
-pageService: # 文章等模块服务
+page_service: # 文章等模块服务
   host: http://localhost:3002 # 文章等模块服务部署的主机地址，可以为 IP， 也可以为域名
 core: # 网关层
   port: 3000 # 网关层公开端口
-  allow_origins: [example.com, excccc.com] # 网关层允许的跨域来源，不可以为 `*`，使用 `,` 进行分隔
+  allow_origins: [example.com, excccc.com] # 网关层允许的跨域来源，这个地方也可以写成 localhost:9528,localhost:2323,localhost:2222 而不需要 Object
+
+collection_name: 'mog' # 数据库的集合名
+db_host: 'localhost' # 数据库主机地址
+#...more
 ```
 
 ## 启动 Core
+
+若你使用 node 启动，则命令应当如：
+
+```bash
+node dist/apps/core/main.js \
+  --db_host=localhost \
+  --config=core.yml
+```
 
 若你使用 NestJS CLI 启动，则命令应当如：
 
 ```bash
 nest start core \
 	-- \
-	--userService_host=192.168.101.2 \
-	--pageService_host=192.168.101.3 \
-	--core_port=8888 \
-	--core_allow_origins=example.com,excccc.com
+  --db_host=localhost \
+  --config=core.yml
 
-# 或者是使用 YAML 格式的配置文件
+# 或者是只使用 YAML 格式的配置文件
 
 nest start core \
   -- \
   --config=core.yml
+  
 ```
 
-若你直接使用 node 启动，则命令应当如：
+:::warning
+无论如何，都需要携带YAML配置文件，若不进行配置则会自动获取当前执行目录下的 env.yaml 文件，若文件不存在则会报错，如果全部默认参数也需要存在这个文件
 
-```bash
-node dist/apps/core/main.js \
-	--userService_host=192.168.101.2 \
-	--pageService_host=192.168.101.3 \
-	--core_port=8888 \
-	--core_allow_origins=example.com,excccc.com
-
-# 或者是使用 YAML 格式的配置文件
-
-node dist/apps/core/main.js \
-  --config=core.yml
-```
+命令行允许输入的参数有限，所以我们建议使用 YAML 格式的配置文件。有关允许命令行输入的参数可以查阅 [配置索引](/config/)
+:::
 
 ---
 
 :::tip 如何检查配置？
 
-当 core 启动时，你可以看到出现了一个类似于 JSON 对象的文本内容，若按照上方例子运行，则应该出现如下内容
+当 core 启动时，你可以看到出现了一个类似于 JSON 对象的文本内容，应该出现类似的内容
 
-```json
-{                                                                     
-  _: [], // 正常情况没有配置下，应该只有这一行
-  userService_host: '192.168.101.2',
-  pageService_host: '192.168.101.3',
-  core_port: 8888,
-  core_allow_origins: 'example.com,excccc.com'
+```js
+{                                                                                                 
+  disable_cache: true,
+  core: {
+    port: 8080,
+    allow_origins: [
+      'localhost:9528',
+      'localhost:2323',
+      'localhost:2222'
+    ]
+  },
+  user_service: {
+    host: 'http://localhost:2331',
+    port: 2331
+  },
+  page_service: {
+    host: 'http://localhost:2332',
+    port: 2332
+  },
+  collection_name: 'mog',
+  db_host: 'localhost'
 }
 ```
 
@@ -103,4 +112,4 @@ node dist/apps/core/main.js \
 
 :::
 
-更多配置项请查阅 [配置索引](/install/)
+更多配置项请查阅 [配置索引](/config/)
