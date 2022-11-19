@@ -1,7 +1,3 @@
-<template>
-  <span class="badge" :class="color">{{ text }}</span>
-</template>
-
 <script setup lang="ts">
 defineProps({
   text: {
@@ -12,8 +8,22 @@ defineProps({
     type: String,
     default: 'blue',
   },
+  small: {
+    type: Boolean,
+    default: false,
+  },
+  big: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
+
+<template>
+  <span class="badge" :class="color + (small ? ' small' : '') + (big ? ' big' : '')">
+    {{ text }}
+  </span>
+</template>
 
 <style >
 .badge {
@@ -61,5 +71,13 @@ defineProps({
 
 html.dark .badge {
   background-color: rgba(31, 41, 55, 1);
+}
+
+.badge.small {
+  font-size: 1rem;
+}
+
+.badge.big {
+  font-size: 2.5rem;
 }
 </style>
