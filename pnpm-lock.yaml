@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify-json/carbon': 1.1.9
+  '@iconify-json/carbon': 1.1.10
   '@unocss/reset': 0.46.5
   '@vitejs/plugin-vue': latest
   '@vue/theme': 1.2.2
@@ -31,7 +31,7 @@ dependencies:
   vue: 3.2.45
 
 devDependencies:
-  '@iconify-json/carbon': 1.1.9
+  '@iconify-json/carbon': 1.1.10
   '@unocss/reset': 0.46.5
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
   esno: 0.16.3
@@ -1460,8 +1460,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@iconify-json/carbon/1.1.9:
-    resolution: {integrity: sha512-O3geRhhnE9dDDC4oT6qwBs7sdc37R9UqftiG7BP8YVDw8OcXv8i95J0ZEkIfdOXFj1Wb6kC/Uu/6VTlAqotVXg==}
+  /@iconify-json/carbon/1.1.10:
+    resolution: {integrity: sha512-k3/28wk+2CklUPdKBXWhPHQxquvLGiPYk1s6UWdQYR3YtneHRMuCp+0zc9yNjHYBzoSylMIECO0UPH+SdccguA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
