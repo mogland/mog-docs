@@ -1,0 +1,1 @@
+import{g as t,o as a,c as l,t as n,n as s}from"../app.991932e7.js";const i=t({__name:"Badge",props:{text:{type:String,required:!0},color:{type:String,default:"blue"},small:{type:Boolean,default:!1},big:{type:Boolean,default:!1}},setup(e){return(o,r)=>(a(),l("span",{class:s(["badge",e.color+(e.small?" small":"")+(e.big?" big":"")])},n(e.text),3))}});export{i as _};
