@@ -16,14 +16,14 @@ sidebar: false
 - [X] 配置模块 ( PR in [#336](https://github.com/mogland/core/pull/336) ) 
 - [X] 用户服务模块 ( PR in [#348](https://github.com/mogland/core/pull/348) )  
 - [x] 分类 / 标签 + 文章 / 页面的服务模块 ( PR in [#363](https://github.com/mogland/core/pull/363) )    
-- [ ] 基本评论模块 ( PR in [#404](https://github.com/mogland/core/pull/404) ) 
-- [ ] ~~评论服务模块~~  （Waiting For RFC Document )
+- [X] 基本评论模块 ( PR in [#404](https://github.com/mogland/core/pull/404) ) 
+- [ ] ~~评论服务模块~~  （ rfc#0003 )
 - [x] 数据聚合模块 ( PR in [#396](https://github.com/mogland/core/pull/396) ) 
 - [ ] ~~友链服务模块~~ （ Waiting For RFC Document )
 - [ ] 基本友链模块 
-- [ ] Markdown Render / Processer  
+- [ ] ~~Markdown Render / Processer~~
 - [ ] Communication (Like Email Service)  
-- [ ] 备份服务模块  
+- [ ] 备份服务模块
 
 ## Mog Admin Console Dashboard v2
 
