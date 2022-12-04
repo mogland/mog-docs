@@ -20,7 +20,7 @@ sidebar: false
 - [ ] ~~评论服务模块~~  （ rfc#0003 )
 - [x] 数据聚合模块 ( PR in [#396](https://github.com/mogland/core/pull/396) ) 
 - [ ] ~~友链服务模块~~ （ Waiting For RFC Document )
-- [ ] 基本友链模块 
+- [x] 基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511) )
 - [ ] ~~Markdown Render / Processer~~
 - [ ] Communication (Like Email Service)  
 - [ ] 备份服务模块
