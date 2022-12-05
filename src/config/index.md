@@ -137,6 +137,13 @@ JWT 密钥。
 
 JWT 过期时间（天）。
 
+### core.listen_ip
+
+- 类型：`string`
+- 默认值：`0.0.0.0`
+
+Mog Core 监听 IP
+
 ### core.port
 
 - 类型：`number`
