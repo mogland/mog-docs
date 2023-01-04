@@ -54,6 +54,24 @@
 }
 
 /**
+  * Component: Code
+  * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-code-block-bg: #292d3e;
+  --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+  --vp-code-tab-bg: var(--vp-code-block-bg);
+  --vp-code-tab-divider: var(--vp-c-divider-dark-2);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
+  --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
+  --vp-code-tab-active-bar-color: var(--vp-c-brand);
+}
+
+.dark {
+  --vp-code-block-bg: var(--vt-c-bg-soft);
+}
+
+/**
  * Component: Home
  * -------------------------------------------------------------------------- */
 :root {
@@ -75,10 +93,10 @@
 }
 
 
-.dark{
+.dark {
   --fill-override: #fff;
   --glyph-gray: #f5f5f7;
-  --material-background-color: rgba(29,29,31,0.72);
+  --material-background-color: rgba(29, 29, 31, 0.72);
   --label-primary-color: #fffffff9;
   --background-tertiary-color: #1d1d1f;
 }
