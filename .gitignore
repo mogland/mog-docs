@@ -16,3 +16,7 @@ node_modules
 .vscode
 
 
+# Vitepress cache
+
+src/.vitepress/dist
+src/.vitepress/cache
