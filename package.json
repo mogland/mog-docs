@@ -27,7 +27,7 @@
     "fast-glob": "3.2.12",
     "https-localhost": "4.7.1",
     "pathe": "1.0.0",
-    "unocss": "0.47.6",
+    "unocss": "0.48.0",
     "unplugin-vue-components": "0.22.12",
     "vite": "4.0.4",
     "vite-plugin-pwa": "0.14.1",
