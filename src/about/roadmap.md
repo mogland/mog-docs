@@ -35,10 +35,10 @@ sidebar: false
 
 TBD.
 
-## Mog FrontEnd MNE <Badge text="Beta" color="blue" small/>
+## Mog Frontend MNE <Badge text="Beta" color="blue" small/>
 
 :::info MNE 是什么？
-MNE 是 Mog FrontEnd 的简称，它是 Mog 的前端框架，它将会在 Mog Core v2 中作为官方推荐的前端框架。
+MNE 是 Mog FrontEnd 的简称，它是 Mog 的前端框架，支持主题系统和插件系统，它将会在 Mog Core v2 中作为官方推荐的前端框架。
 :::
 
-TBD.
+
