@@ -1,5 +1,13 @@
 .cls-1{fill:url(#未命名的渐变_586);}.cls-2,.cls-5{fill:none;stroke:#fff;}.cls-2{stroke-miterlimit:10;stroke-width:5px;}.cls-3{opacity:0.15;}.cls-4{fill:#7b7a7b;stroke:#cbcccc;stroke-width:2px;fill-rule:evenodd;}.cls-5{stroke-width:15px;}
 
+.dark s {
+  color: #3a3a3a
+}
+
+s {
+  color: rgba(136, 136, 136, 0.518);
+}
+
 .dark [img-light] {
   display: none;
 }
@@ -28,6 +36,10 @@ html:not(.dark) [img-dark] {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.dark [type="checkbox"] {
+  border: 1px solid #3a3a3a;
 }
 
 [type="checkbox"]:checked {

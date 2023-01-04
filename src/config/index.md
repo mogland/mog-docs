@@ -161,7 +161,7 @@ Mog Core 网关层启动的端口号
 ### user_service.host
 
 - 类型：`string`
-- 默认值：`'http://localhost:2331'`
+- 默认值：`'http://localhost'`
 
 用户服务部署的主机地址，可以为 IP， 也可以为域名
 
@@ -175,7 +175,7 @@ Mog Core 网关层启动的端口号
 ### page_service.host
 
 - 类型：`string`
-- 默认值：`'http://localhost:2332'`
+- 默认值：`'http://localhost'`
 
 页面服务部署的主机地址，可以为 IP， 也可以为域名
 
@@ -185,6 +185,20 @@ Mog Core 网关层启动的端口号
 - 默认值：`2332`
 
 页面服务部署的端口号
+
+### comments_service.host
+
+- 类型：`string`
+- 默认值：`'http://localhost'`
+
+评论服务部署的主机地址，可以为 IP， 也可以为域名
+
+### comments_service.port
+
+- 类型：`number`
+- 默认值：`2333`
+
+评论服务部署的端口号
 
 ## 配置举例
 
