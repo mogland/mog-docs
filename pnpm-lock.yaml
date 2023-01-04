@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify-json/carbon': 1.1.10
+  '@iconify-json/carbon': 1.1.13
   '@unocss/reset': 0.47.5
   '@vitejs/plugin-vue': latest
   '@vue/theme': 1.3.0
@@ -31,7 +31,7 @@ dependencies:
   vue: 3.2.45
 
 devDependencies:
-  '@iconify-json/carbon': 1.1.10
+  '@iconify-json/carbon': 1.1.13
   '@unocss/reset': 0.47.5
   '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
   esno: 0.16.3
@@ -1600,8 +1600,8 @@ packages:
     dev: true
     optional: true
 
-  /@iconify-json/carbon/1.1.10:
-    resolution: {integrity: sha512-k3/28wk+2CklUPdKBXWhPHQxquvLGiPYk1s6UWdQYR3YtneHRMuCp+0zc9yNjHYBzoSylMIECO0UPH+SdccguA==}
+  /@iconify-json/carbon/1.1.13:
+    resolution: {integrity: sha512-qPR7n3JkCqIrvjxnyUPIejhn0wrZJsLmija59U/zwFm5SMOITCfLx+Jp6VecnL0Sm76zRE5Kv54VzolQljB97A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -4135,6 +4135,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
 
   /spdy-transport/3.0.0:
     resolution: {integrity: sha512-hsLVFE5SjA6TCisWeJXFKniGGOpBgMLmerfO2aCyCU5s7nJ/rpAepqmFifv/GCbSbueEeAJJnmSQ2rKC/g8Fcw==}
