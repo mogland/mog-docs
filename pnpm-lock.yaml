@@ -13,6 +13,7 @@ specifiers:
   jiti: 1.16.1
   markdown-it-task-lists: 2.1.1
   pathe: 1.0.0
+  shiki: ^0.12.1
   unocss: 0.47.6
   unplugin-vue-components: 0.22.12
   vite: 4.0.4
@@ -27,6 +28,7 @@ dependencies:
   '@vueuse/head': 1.0.22_vue@3.2.45
   jiti: 1.16.1
   markdown-it-task-lists: 2.1.1
+  shiki: 0.12.1
   vitepress: 1.0.0-alpha.35
   vue: 3.2.45
 

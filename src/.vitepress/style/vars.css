@@ -12,6 +12,8 @@
   --vp-c-brand-darker: #52730d;
   --vp-c-text-code: #5d6f5d;
   --vp-code-block-bg: rgba(125, 125, 125, 0.04);
+  --vp-c-copy-button-bg: rgba(125, 125, 125, 0.04);
+  --vp-c-copy-button-bg-hover: rgba(125, 125, 125, 0.08);
   /* fix TIP on light: the default one is too light (2 in contrast) */
   --vp-custom-block-tip-text: rgb(12, 124, 108);
   --vp-custom-block-tip-border: rgba(12, 124, 108, 0.5);
@@ -58,16 +60,17 @@
   * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-code-block-bg: #292d3e;
-  --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+  
   --vp-code-tab-bg: var(--vp-code-block-bg);
-  --vp-code-tab-divider: var(--vp-c-divider-dark-2);
-  --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
-  --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
   --vp-code-tab-active-bar-color: var(--vp-c-brand);
 }
 
 .dark {
+  --vp-code-block-bg: #292d3e;
+  --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+  --vp-code-tab-divider: var(--vp-c-divider-dark-2);
+  --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
+  --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
   --vp-code-block-bg: var(--vt-c-bg-soft);
 }
 

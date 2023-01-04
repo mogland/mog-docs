@@ -1,4 +1,32 @@
-.cls-1{fill:url(#未命名的渐变_586);}.cls-2,.cls-5{fill:none;stroke:#fff;}.cls-2{stroke-miterlimit:10;stroke-width:5px;}.cls-3{opacity:0.15;}.cls-4{fill:#7b7a7b;stroke:#cbcccc;stroke-width:2px;fill-rule:evenodd;}.cls-5{stroke-width:15px;}
+.cls-1 {
+  fill: url(#未命名的渐变_586);
+}
+
+.cls-2,
+.cls-5 {
+  fill: none;
+  stroke: #fff;
+}
+
+.cls-2 {
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+}
+
+.cls-3 {
+  opacity: 0.15;
+}
+
+.cls-4 {
+  fill: #7b7a7b;
+  stroke: #cbcccc;
+  stroke-width: 2px;
+  fill-rule: evenodd;
+}
+
+.cls-5 {
+  stroke-width: 15px;
+}
 
 .dark s {
   color: #3a3a3a
@@ -157,6 +185,20 @@ img.resizable-img {
   }
 }
 
+.vt-doc div[class*='language-'],
+.vt-doc [class*='language-']>button.copy {
+  background-color: var(--vp-c-copy-button-bg);
+}
+
+.vt-doc [class*='language-']>button.copy:hover,
+.vt-doc [class*='language-']>button.copy.copied,
+.vt-doc [class*='language-']>button.copy:hover.copied,
+.vt-doc [class*='language-']>button.copy.copied::before,
+.vt-doc [class*='language-']>button.copy:hover.copied::before {
+  background-color: var(--vp-c-copy-button-bg-hover);
+  color: var(--vp-c-text-code) !important;
+}
+
 .vp-code-group {
   margin-top: 16px;
 }
@@ -225,11 +267,11 @@ img.resizable-img {
   color: var(--vp-code-tab-hover-text-color);
 }
 
-.vp-code-group input:checked + label {
+.vp-code-group input:checked+label {
   color: var(--vp-code-tab-active-text-color);
 }
 
-.vp-code-group input:checked + label::after {
+.vp-code-group input:checked+label::after {
   background-color: var(--vp-code-tab-active-bar-color);
 }
 
@@ -241,5 +283,18 @@ img.resizable-img {
 }
 
 .vp-code-group div[class*='language-'].active {
+  display: block;
+}
+
+
+.vp-code-dark {
+  display: none;
+}
+
+.dark .vp-code-light {
+  display: none;
+}
+
+.dark .vp-code-dark {
   display: block;
 }

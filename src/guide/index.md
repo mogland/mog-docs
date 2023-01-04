@@ -32,21 +32,20 @@ Mog 仅推荐在 **Linux 和 macOS** 系统上使用，Windows 系统上的使�
 
 下载后，解压压缩包，你将会获得一个文件夹，请不要修改文件夹内的任何一件东西，打开终端，使用 `cd` 命令进入此文件夹后，分别输入以下命令启动组件：
 
-```bash
-# 启动 core Gateway 核心组件
+::: code-group
+```bash [启动 Core 组件]
 cd core
 node index.js
-
-# 启动 Page-Service 组件
-cd page-service
-node index.js
-
-# 启动 User-Service 组件
+```
+```bash [启动 User-Service 组件]
 cd user-service
 node index.js
-
-# 启动...组件
 ```
+```bash [启动 xxx-Service 组件]
+cd xxx-service
+node index.js
+```
+:::
 
 目前支持的组件，请前往[「自主构建」](../install/build.md)章节，我们在那里给出了具体的组件名称
 

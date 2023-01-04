@@ -48,17 +48,13 @@ db_host: 'localhost' # 数据库主机地址
 
 ## 启动 Core
 
-若你使用 node 启动，则命令应当如：
-
-```bash
+::: code-group
+```bash [使用 Node 启动]
 node dist/apps/core/main.js \
   --db_host=localhost \
   --config=core.yml
 ```
-
-若你使用 NestJS CLI 启动，则命令应当如：
-
-```bash
+```bash [使用 NestJS CLI 启动]
 nest start core \
 	-- \
   --db_host=localhost \
@@ -71,45 +67,29 @@ nest start core \
   --config=core.yml
   
 ```
+:::
 
-:::warning
-无论如何，都需要携带YAML配置文件，若不进行配置则会自动获取当前执行目录下的 env.yaml 文件，若文件不存在则会报错，如果全部默认参数也需要存在这个文件
+### ⚠️ 警告
+
+无论如何都需要携带YAML配置文件，若不进行配置则会自动获取当前执行目录下的 env.yaml 文件，若文件不存在则会报错，如果全部默认参数也需要存在这个文件
 
 命令行允许输入的参数有限，所以我们建议使用 YAML 格式的配置文件。有关允许命令行输入的参数可以查阅 [配置索引](/config/)
-:::
+
 
 ---
 
-:::tip 如何检查配置？
+## 如何检查配置？
 
 当 core 启动时，你可以看到出现了一个类似于 JSON 对象的文本内容，应该出现类似的内容
 
 ```js
-{                                                                                                 
-  disable_cache: true,
-  core: {
-    port: 8080,
-    allow_origins: [
-      'localhost:9528',
-      'localhost:2323',
-      'localhost:2222'
-    ]
-  },
-  user_service: {
-    host: 'http://localhost:2331',
-    port: 2331
-  },
-  page_service: {
-    host: 'http://localhost:2332',
-    port: 2332
-  },
+{
   collection_name: 'mog',
   db_host: 'localhost'
+  // ...
 }
 ```
 
 你可以在此处检查你的配置正确或否
-
-:::
 
 更多配置项请查阅 [配置索引](/config/)

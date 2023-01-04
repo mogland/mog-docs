@@ -43,6 +43,10 @@ export default defineConfigWithTheme<Config>({
   markdown: {
     config: (md) => {
       md.use(require('markdown-it-task-lists'))
+    },
+    theme: {
+      light: "github-light",
+      dark: "github-dark",
     }
   },
   themeConfig: {
