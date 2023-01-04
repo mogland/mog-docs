@@ -15,7 +15,7 @@
     "@vueuse/head": "1.0.22",
     "jiti": "1.16.1",
     "markdown-it-task-lists": "2.1.1",
-    "vitepress": "1.0.0-alpha.29",
+    "vitepress": "1.0.0-alpha.35",
     "vue": "latest"
   },
   "devDependencies": {
