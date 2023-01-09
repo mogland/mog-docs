@@ -6,6 +6,7 @@
  * @LastEditTime: 2022-09-30 23:15:59
  * Coding With IU
  */
+import { SocialLink } from '@vue/theme'
 import contributorNames from './contributor-names.json'
 
 export interface Contributor {
@@ -28,7 +29,7 @@ export interface CoreTeam {
   title?: string
   org?: string
   desc?: string
-  links?: SocialEntry[]
+  links?: SocialLink[]
 }
 
 const contributorsAvatars: Record<string, string> = {}
@@ -44,8 +45,8 @@ export const contributors = (contributorNames as string[]).reduce((acc, name) =>
 const createLinks = (tm: CoreTeam): CoreTeam => {
   tm.links = [
     { icon: 'github', link: `https://github.com/${tm.github}` },
-    ...(tm.twitter ? [{ icon: 'twitter', link: `https://twitter.com/${tm.twitter}` }] : []),
   ]
+  tm.twitter && tm.links.push({ icon: 'twitter', link: `https://twitter.com/${tm.twitter}` })
   return tm
 }
 
@@ -56,7 +57,7 @@ const plainTeamMembers: CoreTeam[] = [
     github: 'wibus-wee',
     twitter: 'wibus_wee',
     // sponsor: 'https://github.com/sponsors/antfu',
-    title: '🇨🇳 Uaena / 16 yo. / FSD (like) / Personal Piano Player & Singer',
+    title: '🇨🇳 Uaena / FSD (like) / Personal Piano Player & Singer',
     desc: 'Mog 核心开发者 & 核心组织者',
   },
   {
@@ -64,7 +65,7 @@ const plainTeamMembers: CoreTeam[] = [
     name: 'MYXXTS',
     github: 'MYXXTS',
     title: '珍藏于心底的时光，是记忆深处最美的花',
-    desc: 'Mog RFC 主要审核者 & 项目设计者',
+    desc: 'Mog RFC 主要参与者 & 项目设计者',
 
   },
   {
@@ -72,7 +73,7 @@ const plainTeamMembers: CoreTeam[] = [
     name: 'ttimochan',
     github: 'ttimochan',
     title: "Let's start learning !",
-    desc: 'Mog 的文档作者 & PR 审核者 & CI/CD',
+    desc: 'Mog 文档团队 & PR 审核 & CI/CD',
   },
   {
     avatar: `https://github.com/origami-tech.png`,

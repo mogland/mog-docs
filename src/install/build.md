@@ -30,11 +30,7 @@ pnpm build:<service-name>
 pnpm build:core
 ```
 
-目前支持的 `service-name` 有：
-
-- `core` - 网关层 **（必须构建）**
-- `user-service` - 用户服务模块 **（必须构建）**
-- `page-service` - 文章页面分类服务模块 **（必须构建）**
+目前支持的 service-name 可在 [目前支持的服务](#目前支持的服务) 中看到
 
 使用 `node` 命令启动你已构建完成的服务
 
@@ -46,7 +42,17 @@ cd dist/core
 node main.js
 ```
 
-## 拓展：使用 @vercel/ncc 重新构建
+## 目前支持的服务
+
+目前支持的 **service-name** 有：
+
+- *core* - 必要网关层 <Badge text="Required" color="red" small/>
+- *user-service* - 用户服务模块 <Badge text="Required" color="red" small/>
+- *page-service* - 文章页面分类服务模块
+- *comments-service* - 评论服务模块
+- *friends-service* 友情链接服务模块
+
+## 拓展：使用 @vercel/ncc 重新打包
 
 `@vercel/ncc` 是一个可以将 Node.js 项目打包成一个单文件的工具，让你可以在不安装项目依赖（`node_modules`）的情况下运行项目。
 
@@ -75,4 +81,6 @@ node main.js
 
 关于组件启动时的自定义配置，请前往[「配置索引」](../config/)章节
 
-> 关于如何持久化运行，请自行使用搜索引擎探索。这里给两个相关的关键词：`pm2`, `screen`, `docker`, `docker compose`
+:::info 关于持久化运行
+请自行使用搜索引擎探索。这里给几个相关的关键词：**pm2**, **screen**, **docker**, **docker compose**
+:::

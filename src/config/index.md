@@ -160,10 +160,10 @@ Mog Core 网关层启动的端口号
 
 ### user_service.host
 
-- 类型：`string`
-- 默认值：`'http://localhost'`
+- 类型：`string | undefined`
+- 默认值：`空`
 
-用户服务部署的主机地址，可以为 IP， 也可以为域名
+用户服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
 
 ### user_service.port
 
@@ -174,10 +174,10 @@ Mog Core 网关层启动的端口号
 
 ### page_service.host
 
-- 类型：`string`
-- 默认值：`'http://localhost'`
+- 类型：`string | undefined`
+- 默认值：`空`
 
-页面服务部署的主机地址，可以为 IP， 也可以为域名
+页面服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
 
 ### page_service.port
 
@@ -188,10 +188,10 @@ Mog Core 网关层启动的端口号
 
 ### comments_service.host
 
-- 类型：`string`
-- 默认值：`'http://localhost'`
+- 类型：`string | undefined`
+- 默认值：`空`
 
-评论服务部署的主机地址，可以为 IP， 也可以为域名
+评论服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
 
 ### comments_service.port
 
@@ -199,6 +199,20 @@ Mog Core 网关层启动的端口号
 - 默认值：`2333`
 
 评论服务部署的端口号
+
+### friends_service.host
+
+- 类型：`string | undefined`
+- 默认值：`空`
+
+友链服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
+
+### friends_service.port
+
+- 类型：`number`
+- 默认值：`2334`
+
+友链服务部署的端口号
 
 ## 配置举例
 

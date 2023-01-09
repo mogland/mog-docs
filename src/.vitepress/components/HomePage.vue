@@ -7,34 +7,27 @@
  * Coding With IU
 -->
 <script setup lang="ts">
-import { VPTeamMembers } from 'vitepress/theme'
+import VPTeamMembers from './VPTeamMembers.vue'
+// import { VPTeamMembers } from 'vitepress/theme'
 import { teamMembers } from '../contributors'
 
 const features = [
   {
     "title": "弹性服务",
-    "details": "你可以任意装载你需要的服务，而不需要担心其他的影响。这项技术得亏于 Mog 采用了微服务架构。"
+    "details": "你可以任意装载你需要的服务，而不需要担心其他的影响。"
   },
   {
-    "title": "主题市场  (WIP)",
-    "details": "主题多种开发方式，支持使用模板引擎耦合式开发或前后端分离开发，提供更多的主题选择。"
-  },
-  {
-    "title": "插件系统  (WIP)",
-    "details": "使用插件对博客功能自定义扩展，打造更加强大的博客空间。"
+    "title": "可扩展 & 可自定义",
+    "details": "可插拔服务设计，按需添加或者删除服务，无需担心其他服务影响。"
   },
   {
     "title": "评论系统",
     "details": "Mog 提供了几个简单的评论模块，为前端项目开发助力。"
-  }
-]
-
-const friends = [
+  },
   {
-    "name": "RZ.SB",
-    "link": "https://rz.sb",
-    "image": "rz.sb.png"
-  }
+    "title": "自由软件",
+    "details": "在遵守 AGPL-3.0 许可证的情况下，可以对 Mog 自由分发，使用，二次修改。"
+  },
 ]
 
 </script>
@@ -44,11 +37,11 @@ const friends = [
   <section id="hero">
     <h1 class="tagline">
       The
-      <span class="accent">Flexible Module</span>
+      <span class="accent">Flexible Modular</span>
       <br />Blog System
     </h1>
     <p class="description">
-      一款弹性的模块化 CMS 博客系统 | Module + Blog = /mɑːɡ/
+      一款弹性的模块化 CMS 博客系统 /mɑːɡ/
     </p>
     <p class="actions">
       <vue-mastery-modal />
@@ -79,7 +72,7 @@ const friends = [
     <div class="content-container">
       <main class="main">
         <div class="vp-doc" flex flex-col items-center mt-10>
-          <h2 id="meet-the-team" op50 font-normal p="t-10 b-2">
+          <h2 id="meet-the-team">
             认识一下团队
           </h2>
           <div w-full p-10>
@@ -90,31 +83,7 @@ const friends = [
     </div>
   </div>
 
-  <div class="content">
-    <div class="content-container">
-      <main class="main">
-        <div class="vp-doc" flex flex-col items-center mt-10>
-          <h2 id="meet-the-team" op50 font-normal p="t-10 b-2">
-            来自全国各地朋友们的选择
-          </h2>
-          <div class="sponsor-container platinum landing">
-
-            <span v-for="friend in friends" :key="friend.name">
-              <a :href="friend.link" class="sponsor-item" rel="sponsored noopener" target="_blank">
-              <picture>
-                <img :src="friend.image" :alt="friend.name" />
-              </picture>
-            </a>
-            </span>
-            
-
-          </div>
-        </div>
-      </main>
-    </div>
-  </div>
 </template>
-
 
 <style scoped>
 
@@ -438,5 +407,16 @@ html:not(.dark) .accent,
   .tagline {
     font-size: 36px;
   }
+}
+
+.vp-doc h2 {
+    margin: 48px 0 16px;
+    border-top: 1px solid var(--vp-c-divider-light);
+    padding-top: 24px;
+    letter-spacing: -0.02em;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--vp-c-text-2);
 }
 </style>

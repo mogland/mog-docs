@@ -6,42 +6,24 @@
  * @LastEditTime: 2022-10-05 19:03:08
  * Coding With IU
  */
-import { h } from 'vue'
-// import Theme from 'vitepress/theme'
+import { App, h } from 'vue'
 import { VPTheme } from '@vue/theme'
-
+import 'uno.css'
 import '../style/main.css'
 import '../style/vars.css'
-import 'uno.css'
 // import HomePage from '../components/HomePage.vue'
 
 // import { useRouter } from 'vitepress'
 // import { createHead } from '@vueuse/head'
 
-export default {
-  ...VPTheme,
-  Layout() {
-
-    // const router = useRouter()
-
-    // watch(
-    //   () => router.route.data.relativePath,
-    //   (path) => {
-    //     if (import.meta.env.DEV) {
-    //       return
-    //     }
-    //     ;(window as any).umami.trackView(path)
-    //     ;(window as any).umami.trackEvent(router.route.data.title, 'view')
-    //   },
-    //   { immediate: true }
-    // )
-
+export default Object.assign({}, VPTheme, {
+  Layout: () => {
+    // @ts-ignore
     return h(VPTheme.Layout, null, {
-      // 'home-features-after': () => h(HomePage),
+      // banner: () => h(Banner),
     })
   },
-  // enhanceApp({ app }: { app: App }) {
-  //   const head = createHead()
-  //   app.use(head)
-  // },
-}
+  enhanceApp({ app }: { app: App }) {
+
+  }
+})

@@ -298,3 +298,11 @@ img.resizable-img {
 .dark .vp-code-dark {
   display: block;
 }
+
+.details {
+  padding-top: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+}

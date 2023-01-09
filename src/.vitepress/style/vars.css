@@ -22,9 +22,17 @@
   --vp-c-text-light-2: rgba(56 56 56 / 70%);
   /* fix contrast: lang name on gray code block */
   --vp-c-text-dark-3: rgba(180, 180, 180, 0.7);
+  --vp-c-white-soft: #f9f9f9;
+  --vp-c-black-mute: #2f2f2f;
+  --vp-c-bg-soft: var(--vp-c-white-soft);
+  --vp-c-divider-light: rgba(60, 60, 60, 0.12);
+  --vp-c-text-2: rgba(60, 60, 60, 0.7);
 }
 
 .dark {
+  --vp-c-text-2: rgba(235, 235, 235, 0.6);
+  --vp-c-divider-light: rgba(84, 84, 84, 0.48);
+  --vp-c-bg-soft: var(--vp-c-black-mute);
   --vp-c-bg: #1a1a1a;
   --vp-c-bg-alt: #1a1a1a;
   --vp-code-block-bg: rgba(0, 0, 0, 0.2);

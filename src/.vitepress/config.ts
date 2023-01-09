@@ -9,6 +9,10 @@
 
 
 import type { Config } from '@vue/theme'
+import Components from 'unplugin-vue-components/vite'
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
+import type { Plugin } from 'vite'
 //@ts-ignore
 import baseConfig from '@vue/theme/config'
 import { defineConfigWithTheme } from 'vitepress'
@@ -45,8 +49,8 @@ export default defineConfigWithTheme<Config>({
       md.use(require('markdown-it-task-lists'))
     },
     theme: {
-      light: "github-light",
-      dark: "github-dark",
+      light: "vitesse-light",
+      dark: "vitesse-dark",
     }
   },
   themeConfig: {
@@ -61,28 +65,43 @@ export default defineConfigWithTheme<Config>({
     ],
 
     nav: [
-      { text: '指南', link: '/guide/' },
-      { text: '生态系统', items: [
-        { text: '官方与社区', items: [
-          { text: 'Awesome-Mog', link: 'https://github.com/mogland/awesome-mog' },
-        ]},
-        { text: '核心部分', items: [
-          { text: 'Mog-Core', link: 'https://github.com/mogland/core' },
-          { text: 'Mog-Console', link: 'https://github.com/mogland/console' },
-        ]},
-        { text: '评论组件', items: [
-          { text: 'Mog-Comments-WC', link: 'https://github.com/mogland/mog-comments-wc' },
-          { text: 'Mog-Comments-React', link: 'https://github.com/mogland/mog-comments-react' },
-        ]},
-        { text: '前端程序', items: [
-          { text: 'Mog-Theme-Tiny', link: 'https://github.com/mogland/mog-theme-tiny' },
-          { text: 'Mog-Theme-Single', link: 'https://github.com/mogland/mog-theme-Single' },
-        ]},
-        
-      ]},
+      { text: '指南', link: '/guide/', activeMatch: '^/guide/' },
+      { text: '进阶安装', link: '/install/', activeMatch: '^/install/' },
+      { text: '迁移', link: '/migrate/', activeMatch: '^/migrate/' },
+      { text: '配置', link: '/config/', activeMatch: '^/config/' },
+      {
+        text: '生态系统', items: [
+          {
+            text: '官方与社区', items: [
+              { text: 'Awesome-Mog', link: 'https://github.com/mogland/awesome-mog' },
+            ]
+          },
+          {
+            text: '核心组件', items: [
+              { text: 'Mog-Core', link: 'https://github.com/mogland/core' },
+              { text: 'Mog-Console', link: 'https://github.com/mogland/console' },
+              { text: 'Mog-MNE', link: 'https://github.com/mogland/MNE' },
+            ]
+          },
+          {
+            text: '评论组件', items: [
+              { text: 'Mog-Comments-WC', link: 'https://github.com/mogland/mog-comments-wc' },
+              { text: 'Mog-Comments-React', link: 'https://github.com/mogland/mog-comments-react' },
+            ]
+          },
+          {
+            text: '前端主题', items: [
+              { text: 'Mog-Theme-Tiny', link: 'https://github.com/mogland/mog-theme-tiny' },
+              { text: 'Mog-Theme-Single', link: 'https://github.com/mogland/mog-theme-Single' },
+            ]
+          },
+
+        ]
+      },
       {
         text: '关于',
-        items: [  
+        activeMatch: '^/about/',
+        items: [
           { text: '常见问题', link: '/about/faq' },
           { text: 'RoadMap', link: '/about/roadmap' },
           { text: '版本发布', link: '/about/releases' },
@@ -136,7 +155,7 @@ export default defineConfigWithTheme<Config>({
             },
             {
               text: '从其他博客系统迁移',
-              link: '/migrate/from-other',  
+              link: '/migrate/from-other',
             },
           ]
         },
@@ -164,6 +183,27 @@ export default defineConfigWithTheme<Config>({
   vite: {
     plugins: [
       NavbarFix(),
-    ]
+      Components({
+        include: [/\.vue/, /\.md/],
+        dirs: '.vitepress/components',
+        dts: '.vitepress/components.d.ts',
+      }) as Plugin,
+      Unocss({
+        presets: [
+          presetUno({
+            dark: "class"
+          }),
+          presetAttributify(),
+          presetIcons({
+            scale: 1.2,
+          }),
+        ],
+      }) as unknown as Plugin,
+    ],
+    optimizeDeps: {
+      // vitepress is aliased with replacement `join(DIST_CLIENT_PATH, '/index')`
+      // This needs to be excluded from optimization
+      exclude: ['vitepress'],
+    },
   }
 })

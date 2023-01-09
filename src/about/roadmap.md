@@ -14,22 +14,20 @@ sidebar: false
 目前的设计结构暂时对基础内置模块的支持不是很友好，将会极大提高其编码时的复杂度，我们可能会在后续的版本中重新设计这部分的内容，这取决于用户的需求。
 :::
 
-- [X] 基本框架 ( PR in [#309](https://github.com/mogland/core/pull/309) )
-- [X] 数据库模块 ( PR in [#309](https://github.com/mogland/core/pull/309) ) 
-- [X] 授权模块 ( PR in [#309](https://github.com/mogland/core/pull/309) ) 
-- [X] 配置模块 ( PR in [#336](https://github.com/mogland/core/pull/336) ) 
-- [X] 用户服务模块 ( PR in [#348](https://github.com/mogland/core/pull/348) )  
-- [x] 分类 / 标签 + 文章 / 页面的服务模块 ( PR in [#363](https://github.com/mogland/core/pull/363) )    
-- [X] ~~基本评论模块~~ ( PR in [#404](https://github.com/mogland/core/pull/404), 于 [#558](https://github.com/mogland/core/pull/558) 已移除) 
-- [x] 评论服务模块 (PR in [#558](https://github.com/mogland/core/pull/558)，暂时未接入模板引擎 )
+- [x] 基本框架 ( PR in [#309](https://github.com/mogland/core/pull/309) )
+- [x] 数据库模块 ( PR in [#309](https://github.com/mogland/core/pull/309) ) 
+- [x] 授权模块 ( PR in [#309](https://github.com/mogland/core/pull/309) ) 
+- [x] 配置模块 ( PR in [#336](https://github.com/mogland/core/pull/336) )
+- [x] 用户服务模块 ( PR in [#348](https://github.com/mogland/core/pull/348) )
+- [x] 分类 / 标签 + 文章 / 页面的服务模块 ( PR in [#363](https://github.com/mogland/core/pull/363) )
+- [x] ~~基本评论模块 ( PR in [#404](https://github.com/mogland/core/pull/404), 于 [#558](https://github.com/mogland/core/pull/558) 已移除)~~ 
+- [x] 评论服务模块 (PR in [#558](https://github.com/mogland/core/pull/558) )
 - [x] 数据聚合模块 ( PR in [#396](https://github.com/mogland/core/pull/396) ) 
-- [ ] ~~友链服务模块~~ （ Waiting For RFC Document )
-- [x] 基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511) )
-- [ ] 主题服务模块
-- [ ] 插件服务模块
-- [ ] ~~Markdown Render / Processer~~ ( 第一版暂无计划 )
+- [x] 友链服务模块 ( PR in [#565](https://github.com/mogland/core/pull/565))
+- [x] ~~基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511)，于 [#565](https://github.com/mogland/core/pull/565) 已移除)~~
 - [ ] 通知模块
 - [ ] 备份服务模块
+- [ ] ~~Markdown Render / Processer~~ ( 第一版暂无计划 )
 
 ## Mog Admin Console Dashboard v2
 
@@ -40,5 +38,3 @@ TBD.
 :::info MNE 是什么？
 MNE 是 Mog FrontEnd 的简称，它是 Mog 的前端框架，支持主题系统和插件系统，它将会在 Mog Core v2 中作为官方推荐的前端框架。
 :::
-
-
