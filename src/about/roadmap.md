@@ -26,7 +26,6 @@ sidebar: false
 - [x] 友链服务模块 ( PR in [#565](https://github.com/mogland/core/pull/565))
 - [x] ~~基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511)，于 [#565](https://github.com/mogland/core/pull/565) 已移除)~~
 - [ ] 通知模块
-- [ ] 备份服务模块
 - [ ] ~~Markdown Render / Processer~~ ( 第一版暂无计划 )
 
 ## Mog Admin Console Dashboard v2
