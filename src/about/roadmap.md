@@ -25,8 +25,7 @@ sidebar: false
 - [x] 数据聚合模块 ( PR in [#396](https://github.com/mogland/core/pull/396) ) 
 - [x] 友链服务模块 ( PR in [#565](https://github.com/mogland/core/pull/565))
 - [x] ~~基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511)，于 [#565](https://github.com/mogland/core/pull/565) 已移除)~~
-- [ ] 通知模块
-- [ ] ~~Markdown Render / Processer~~ ( 第一版暂无计划 )
+- [x] 通知模块 (PR in [#568](https://github.com/mogland/core/pull/568))
 
 ## Mog Admin Console Dashboard v2
 
