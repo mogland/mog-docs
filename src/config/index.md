@@ -183,7 +183,7 @@ core:
 ### 其他
 
 ```bash
-$ npx nest start -w core -- --help
+$ node index.js --help
 
 Usage: main [options]                                                                                 
 
@@ -195,10 +195,10 @@ Options:
   -P, --db_password <password>       password of database 数据库密码
   #...
 
-$ npx nest start -w core
+$ node index.js
 # config.yaml 默认获取执行目录下的 env.yaml
 
-$ npx nest start -w core -- --config=/Users/wibus/Desktop/env.yaml # 当然也可以自定义
+$ node index.js --config=/Users/wibus/Desktop/env.yaml # 当然也可以自定义
 # config.yaml 是必须要存在的，这里面储存的是不同服务的环境变量
 # 通过命令行参数输入的都是全局变量，都是通用的。
 ```

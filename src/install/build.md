@@ -50,7 +50,8 @@ node main.js
 - *user-service* - 用户服务模块 <Badge text="Required" color="red" small/>
 - *page-service* - 文章页面分类服务模块
 - *comments-service* - 评论服务模块
-- *friends-service* 友情链接服务模块
+- *friends-service* - 友情链接服务模块
+- *notification-service* - 通知服务模块
 
 ## 拓展：使用 @vercel/ncc 重新打包
 
