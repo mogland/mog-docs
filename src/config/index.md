@@ -158,62 +158,6 @@ Mog Core 网关层启动的端口号
 
 允许跨域的域名列表， **不可以为 `*`**，使用 `,` 进行分隔
 
-### user_service.host
-
-- 类型：`string | undefined`
-- 默认值：`空`
-
-用户服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
-
-### user_service.port
-
-- 类型：`number`
-- 默认值：`2331`
-
-用户服务部署的端口号
-
-### page_service.host
-
-- 类型：`string | undefined`
-- 默认值：`空`
-
-页面服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
-
-### page_service.port
-
-- 类型：`number`
-- 默认值：`2332`
-
-页面服务部署的端口号
-
-### comments_service.host
-
-- 类型：`string | undefined`
-- 默认值：`空`
-
-评论服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
-
-### comments_service.port
-
-- 类型：`number`
-- 默认值：`2333`
-
-评论服务部署的端口号
-
-### friends_service.host
-
-- 类型：`string | undefined`
-- 默认值：`空`
-
-友链服务部署的主机地址，可以为 IP， 也可以为域名，没有特殊情况下建议不填
-
-### friends_service.port
-
-- 类型：`number`
-- 默认值：`2334`
-
-友链服务部署的端口号
-
 ## 配置举例
 
 ### 传递命令行参数
@@ -234,15 +178,7 @@ core:
     'localhost:2323',
     'localhost:2222',
   ]
-user_service:
-  host: http://localhost:2331
-  port: 2331
-page_service:
-  host: http://localhost:2332
-  port: 2332
 ```
-
-上述配置文件将会启动 `Mog Core` 网关层，端口号为 `8080`，允许跨域的域名列表为 `['localhost:9528', 'localhost:2323', 'localhost:2222']`，用户服务部署的主机地址为 `http://localhost:2331`，用户服务部署的端口号为 `2331`，页面服务部署的主机地址为 `http://localhost:2332`，页面服务部署的端口号为 `2332`
 
 ### 其他
 

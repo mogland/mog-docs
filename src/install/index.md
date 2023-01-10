@@ -33,10 +33,6 @@ node <server bundle storge path>
 我们同样支持 YAML 格式的配置文件，你可以在启动的文件夹下创建 `core.yml` 文件，然后将配置写入其中
 
 ```yaml
-user_service: # 用户服务
-  host: http://localhost:3001 # 用户服务部署的主机地址，可以为 IP， 也可以为域名
-page_service: # 文章等模块服务
-  host: http://localhost:3002 # 文章等模块服务部署的主机地址，可以为 IP， 也可以为域名
 core: # 网关层
   port: 3000 # 网关层公开端口
   allow_origins: [example.com, excccc.com] # 网关层允许的跨域来源，这个地方也可以写成 localhost:9528,localhost:2323,localhost:2222 而不需要 Object
