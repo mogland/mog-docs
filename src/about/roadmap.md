@@ -29,7 +29,19 @@ sidebar: false
 
 ## Mog Admin Console Dashboard v2
 
-TBD.
+- [x] 基本结构
+- [x] 仪表板
+- [x] 文章管理
+- [x] 页面管理
+- [x] 写作页面
+- [x] 分类标签管理
+- [x] 评论管理
+- [x] 友链管理
+- [x] 系统设置
+- [x] 服务状态页
+- [x] 个人设置
+- [x] 登录、注册页面
+
 
 ## Mog Frontend MNE <Badge text="Beta" color="blue" small/>
 
