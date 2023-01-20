@@ -167,6 +167,15 @@ export default defineConfigWithTheme<Config>({
               link: '/config/',
             },
           ],
+        },
+        {
+          text: '开发者',
+          items: [
+            {
+              text: '拓展新的服务模块',
+              link: '/developer/extend-service',
+            },
+          ],
         }
       ]
     },
