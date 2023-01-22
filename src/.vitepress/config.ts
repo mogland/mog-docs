@@ -169,6 +169,15 @@ export default defineConfigWithTheme<Config>({
           ],
         },
         {
+          text: '使用指南',
+          items: [
+            {
+              text: '使用内置控制台',
+              link: '/usage/console',
+            },
+          ],
+        },
+        {
           text: '开发者',
           items: [
             {
