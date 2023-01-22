@@ -137,6 +137,40 @@ JWT 密钥。
 
 JWT 过期时间（天）。
 
+### console.enable
+
+- 类型：`boolean`
+- 默认值：`false`
+
+是否启用内置控制台。
+
+### console.versionType
+
+- 类型：`string`
+- 默认值：无默认
+
+版本类型，若需要使用非正式版本，则填入 `pre-release`，若需要正式版本，则任意填入一个字符串 或 不填写。
+
+### console.source
+
+- 类型：`string`
+- 默认值：`gh`
+
+获取方式，可选择 `gh` 或 `npm`。gh 即 GitHub Release，npm 即 npmjs.com。
+
+事实上，并不建议使用 npm 方式，这似乎会导致 rate limit
+
+### console.proxy\.gh
+
+- 类型：`string`
+- 默认值：`https://ghproxy.com`
+
+GitHub Release 的代理地址。
+
+::: info
+我们没有提供支持 npm 是因为我们从 npm 获取文件使用的是官方的一个接口 https://www.npmjs.com/package/${name}/file/${fileId}，而此接口似乎无镜像
+:::
+
 ### core.listen_ip
 
 - 类型：`string`
