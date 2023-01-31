@@ -126,10 +126,6 @@ export default defineConfigWithTheme<Config>({
             {
               text: '主要功能',
               link: '/guide/features',
-            },
-            {
-              text: '跟其他的博客系统进行对比',
-              link: '/guide/compare',
             }
           ],
         },
@@ -184,6 +180,10 @@ export default defineConfigWithTheme<Config>({
               text: '拓展新的服务模块',
               link: '/developer/extend-service',
             },
+            {
+              text: "开发新的主题",
+              link: '/developer/theme',
+            }
           ],
         }
       ]
