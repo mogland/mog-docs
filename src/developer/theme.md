@@ -361,22 +361,26 @@ module.exports = {
 
 ## 主题静态资源
 
-如果你想在主题中使用静态资源，你可以将静态资源放在 `assets` 文件夹下，然后在主题模板中请求 `/raw/*` 来获取静态资源。
+如果你想在主题中使用静态资源，你可以将静态资源放在 `assets` 文件夹下，然后在主题模板中请求 `/raw/assets/*` 来获取静态资源。
 
 ```html
-<link rel="stylesheet" href="/raw/css/style.css">
+<link rel="stylesheet" href="/raw/assets/css/style.css">
 ```
 
 需要注意的是，以下文件可以直接访问，无需通过 `/raw/*` 来访问：
 
 - `assets/favicon.*`
 - `assets/robots.txt`
+- `./favicon.*`
+- `./robots.txt`
 
 ```html
-<link rel="icon" href="/raw/favicon.ico">
+<link rel="icon" href="/raw/assets/favicon.ico">
 <!-- 可以变成 -->
 <link rel="icon" href="/favicon.ico">
 ```
+
+也就是说，如果你想要获取 ejs 等源文件，你可以通过 `/raw/*` 来获取：
 
 ## 主题评论组件
 
