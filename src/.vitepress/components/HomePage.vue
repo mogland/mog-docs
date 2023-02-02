@@ -1,11 +1,3 @@
-<!--
- * @FilePath: /mog-docs/src/.vitepress/components/HomePage copy.vue
- * @author: Wibus
- * @Date: 2022-10-22 16:09:53
- * @LastEditors: Wibus
- * @LastEditTime: 2022-10-22 16:09:53
- * Coding With IU
--->
 <script setup lang="ts">
 import VPTeamMembers from './VPTeamMembers.vue'
 // import { VPTeamMembers } from 'vitepress/theme'
@@ -35,6 +27,10 @@ const features = [
 <template>
 
   <section id="hero">
+    <div class="logo">
+      <img src="/logo.svg" alt="Mog Logo" />
+      <div class="image-bg" />
+    </div>
     <h1 class="tagline">
       The
       <span class="accent">Flexible Modular</span>
@@ -86,54 +82,57 @@ const features = [
 </template>
 
 <style scoped>
-
 .dark .landing .sponsor-item {
-    background-color: var(--vt-c-bg-soft);
+  background-color: var(--vt-c-bg-soft);
 }
 
-.dark .aside .sponsor-item img, .dark .landing .sponsor-item img {
-    filter: grayscale(1) invert(1);
+.dark .aside .sponsor-item img,
+.dark .landing .sponsor-item img {
+  filter: grayscale(1) invert(1);
 }
 
 .dark .landing .sponsor-item:hover {
-    color: var(--vt-c-indigo);
-    background-color: var(--vt-c-white-mute);
+  color: var(--vt-c-indigo);
+  background-color: var(--vt-c-white-mute);
 }
 
 .dark .sponsor-item:hover img {
-    filter: none;
+  filter: none;
 }
 
 .sponsor-item img {
-    transition: filter .2s ease;
+  transition: filter .2s ease;
 }
+
 .sponsor-item img {
-    max-width: calc(var(--max-width) - 30px);
-    max-height: calc(var(--max-width) / 2 - 20px);
+  max-width: calc(var(--max-width) - 30px);
+  max-height: calc(var(--max-width) / 2 - 20px);
 }
 
 .sponsor-item {
-    margin: 2px 0;
-    background-color: var(--vt-c-white-soft);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 2px;
-    transition: background-color .2s ease;
-    height: calc(var(--max-width) / 2 - 6px);
+  margin: 2px 0;
+  background-color: var(--vt-c-white-soft);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  transition: background-color .2s ease;
+  height: calc(var(--max-width) / 2 - 6px);
 }
 
 .sponsor-container {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
-.sponsor-container.platinum{
-    --max-width: 240px;
+
+.sponsor-container.platinum {
+  --max-width: 240px;
 }
-.sponsor-container{
-    --max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(var(--max-width),1fr));
-    column-gap: 4px;
+
+.sponsor-container {
+  --max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--max-width), 1fr));
+  column-gap: 4px;
 }
 
 
@@ -159,7 +158,7 @@ const features = [
   color: var(--vp-c-text-2);
 }
 
-.item{
+.item {
   padding: 8px;
   width: 100%;
 }
@@ -177,10 +176,10 @@ const features = [
 
 @media (min-width: 768px) {
 
-.item.grid-2,
-.item.grid-4 {
-  width: 50%;
-}
+  .item.grid-2,
+  .item.grid-4 {
+    width: 50%;
+  }
 }
 
 
@@ -410,13 +409,53 @@ html:not(.dark) .accent,
 }
 
 .vp-doc h2 {
-    margin: 48px 0 16px;
-    border-top: 1px solid var(--vp-c-divider-light);
-    padding-top: 24px;
-    letter-spacing: -0.02em;
-    line-height: 32px;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--vp-c-text-2);
+  margin: 48px 0 16px;
+  border-top: 1px solid var(--vp-c-divider-light);
+  padding-top: 24px;
+  letter-spacing: -0.02em;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+
+@media (min-width: 960px) {
+  .image-bg {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 640px) {
+  .image-bg {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+.image-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 192px;
+  height: 192px;
+  background-image: linear-gradient(-100deg, #FCDFB5 50%, #9FD9F6 50%);
+  filter: blur(50px);
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
 }
 </style>
