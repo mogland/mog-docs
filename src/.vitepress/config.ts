@@ -80,7 +80,7 @@ export default defineConfigWithTheme<Config>({
             text: '核心组件', items: [
               { text: 'Mog-Core', link: 'https://github.com/mogland/core' },
               { text: 'Mog-Console', link: 'https://github.com/mogland/console' },
-              { text: 'Mog-MNE', link: 'https://github.com/mogland/MNE' },
+              // { text: 'Mog-MNE', link: 'https://github.com/mogland/MNE' },
             ]
           },
           {

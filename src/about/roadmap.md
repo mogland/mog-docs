@@ -8,7 +8,13 @@ sidebar: false
 
 目前我们正在开发的是 **v2.0** 版本，这个版本将会是一个全新的版本，我们将会在这个版本中引入更多的新特性, 你可以在此处查看我们的开发计划。
 
-## Mog Core v2
+## v2 - Stage 4
+
+你可以在此处查看 [GitHub · 🎉 Mog v2 - Stage 4](https://github.com/mogland/core/issues/605) 我们的开发计划。
+
+## v2 - Stage 1 - 3
+
+### Mog Core v2
 
 :::info 为什么在后续的 PR 中移除了基本模块？
 目前的设计结构暂时对基础内置模块的支持不是很友好，将会极大提高其编码时的复杂度，我们可能会在后续的版本中重新设计这部分的内容，这取决于用户的需求。
@@ -27,7 +33,7 @@ sidebar: false
 - [x] ~~基本友链模块 ( PR in [#511](https://github.com/mogland/core/pull/511)，于 [#565](https://github.com/mogland/core/pull/565) 已移除)~~
 - [x] 通知模块 (PR in [#568](https://github.com/mogland/core/pull/568))
 
-## Mog Admin Console Dashboard v2
+### Mog Admin Console Dashboard v2
 
 - [x] 基本结构
 - [x] 仪表板
@@ -41,10 +47,3 @@ sidebar: false
 - [x] 服务状态页
 - [x] 个人设置
 - [x] 登录、注册页面
-
-
-## Mog Frontend MNE <Badge text="Beta" color="blue" small/>
-
-:::info MNE 是什么？
-MNE 是 Mog FrontEnd 的简称，它是 Mog 的前端框架，支持主题系统和插件系统，它将会在 Mog Core v2 中作为官方推荐的前端框架。
-:::
