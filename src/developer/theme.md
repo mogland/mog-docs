@@ -377,3 +377,36 @@ module.exports = {
 <!-- 可以变成 -->
 <link rel="icon" href="/favicon.ico">
 ```
+
+## 主题评论组件
+
+以 [mog-comments-wc](https://github.com/mogland/mog-comments-wc) 为例，我们可以使用它在主题中实现评论功能。
+
+### 本地引入
+
+1. 从 [Release](https://github.com/mogland/mog-comments-wc/releases) 页面下载最新的 `mog-comments-wc.js` 文件，放到 `assets/js` 文件夹下。
+2. 在主题模板中引入 `mog-comments-wc.js` 文件。
+
+```html
+<script src="/raw/js/mog-comments-wc.js"></script>
+```
+
+3. 在主题模板合适的地方中添加评论组件。
+
+```html
+<mog-comments api="<%= config.serverUrl %>" pid="<%= page.id %>"></mog-comments>
+```
+
+### CDN 引入
+
+1. 在主题模板中引入 `mog-comments-wc.js` 文件。
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/mogland/mog-comments-wc/dist/mog-comments-wc.js"></script>
+```
+
+2. 在主题模板合适的地方中添加评论组件。
+
+```html
+<mog-comments api="<%= config.serverUrl %>" pid="<%= page.id %>"></mog-comments>
+```
