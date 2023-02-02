@@ -183,6 +183,10 @@ export default defineConfigWithTheme<Config>({
             {
               text: "开发新的主题",
               link: '/developer/theme',
+            },
+            {
+              text: "在其他地方使用评论组件",
+              link: '/developer/using-comments',
             }
           ],
         }
