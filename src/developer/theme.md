@@ -21,10 +21,10 @@
 ## 主题目录结构
 
 - **packages.json**: 主题的配置文件，类似于 npm 的 `packages.json`，用于描述主题的基本信息，如：主题名字、版本、作者、描述等
-- **config.yaml**: 主题的配置文件，用于描述主题的配置项，如：头像源、评论系统等
-- ~~**i18n.yaml**: 主题的国际化文件，用于描述主题的国际化信息 <Badge text="尚未实现" color="gray" small/>~~
-- **assets**: 主题的静态资源文件，如：css、js、图片等
-- ~~**plugins**: 主题的插件文件，用于注入方法到主题中，如：moment.js 等方法类库 <Badge text="尚未实现" color="gray" small/>~~
+- **config.yaml**: 主题的配置文件，用于描述主题的配置项，如：头像源、评论系统等 - [#主题配置](#主题配置)
+- **i18n.yaml**: 主题的国际化文件，用于描述主题的国际化信息 - [#i18n-方案](#i18n-方案)
+- **assets**: 主题的静态资源文件，如：css、js、图片等 - [#主题静态资源](#主题静态资源)
+- **plugins**: 主题的插件文件，用于注入方法到主题中，如：moment.js 等方法类库 - [#主题模板扩展](#主题模板扩展)
 - **index.ejs**: 主页
 - **post.ejs**: 文章页
 - **page.ejs**: 页面页
@@ -267,6 +267,113 @@ isCategory: false, // 是否是分类或者标签页
 }
 ```
 
-## i18n 方案 <Badge text="尚未实现" color="gray" small/>
 
-## 主题模板扩展 <Badge text="尚未实现" color="gray" small/>
+## i18n 方案
+
+我们可以使用内置函数 `_i(<key>)` ，这个函数可以根据传入的 key 来获取对应的 value。
+
+### 定义 i18n key
+
+我们使用 yaml 文件来定义 i18n，在主题根目录创建 `i18n.yaml`，并定义 key。
+
+```yaml
+en: # 语言
+  hello: 'Hello' # key
+  world: 'World'
+zh:
+  hello: '你好'
+  world: '世界'
+```
+
+按照上面的定义，我们可以通过 `_i('hello')` 来获取对应的 value。当无法找到对应的 key 时，会返回 key 本身。
+
+```html
+<%- _i('hello') %> <%- _i('world') %>
+<!-- zh：你好 世界 -->
+<!-- en：Hello World -->
+```
+
+
+## 主题模板扩展
+
+如果你想在主题模板中使用函数输出某些东西，你可以通过「扩展」来实现这个功能。
+
+在 `plugins` 文件夹下创建一个 js 文件，然后在该文件中使用 `module.exports` 导出一个对象，对象中包含一个 `name` 属性，用于定义插件名称，以及其他函数，用于在主题模板中调用。
+
+
+### 定义主题模板扩展插件
+
+我们将会遍历 `plugins` 文件夹下的所有文件，将其作为主题模板扩展插件，将其挂载到主题模板中。
+
+比如说，我们创建一个 `time.js` 文件，用于输出当前时间。
+
+```js
+// plugins/time.js
+module.exports = {
+  name: 'time',
+  time: () => {
+    return new Date().toLocaleString()
+  },
+}
+```
+
+在主题模板中，我们可以通过 `time()` 来调用 `time.js` 中定义的 `time` 函数。
+
+```html
+<%- time() %>
+```
+
+在函数内，你依然可以使用 [变量](#变量) 中定义的变量。
+
+### 例子：在头部输出 OpenGrraph 标签
+
+```js
+module.exports = {
+  name: 'opengraph', // 插件名称
+  opengraph: function () {
+    const siteName = config.seo.title; // 网站名称
+    const siteDescription = config.seo.description; // 网站描述
+    const isArticle = page.title ? true : false; // 是否是文章页(有 title)
+    const title = isArticle ? page.title : siteName; // 标题
+    const summary = isArticle ? 
+    page.summary ? page.summary : page.text.substring(0, 100) 
+    : siteDescription; // 描述，文章页取文章描述，首页取网站描述
+    const image = page.image ? page?.image[0].url : config.user.avatar; // 图片，文章页取文章图片，首页取网站头像
+    const _url = url.url; // 当前页面链接
+    const type = isArticle ? 'article' : 'website'; // 类型，文章页为 article，首页为 website
+    return ` // 返回 OpenGrraph 标签
+      <meta property="og:title" content="${title}" />
+      <meta property="og:type" content="${type}" />
+      <meta property="og:url" content="${_url}" />
+      <meta property="og:image" content="${image}" />
+      <meta property="og:site_name" content="${siteName}" />
+      <meta property="og:description" content="${summary}" />
+    `
+  },
+}
+```
+
+在主题模板中，我们可以通过 `opengraph()` 来调用 `opengraph.js` 中定义的 `opengraph` 函数。
+
+```html
+<%- opengraph() %>
+```
+
+## 主题静态资源
+
+如果你想在主题中使用静态资源，你可以将静态资源放在 `assets` 文件夹下，然后在主题模板中请求 `/raw/*` 来获取静态资源。
+
+```html
+<link rel="stylesheet" href="/raw/css/style.css">
+```
+
+需要注意的是，以下文件可以直接访问，无需通过 `/raw/*` 来访问：
+
+- `assets/favicon.*`
+- `assets/robots.txt`
+
+```html
+<link rel="icon" href="/raw/favicon.ico">
+<!-- 可以变成 -->
+<link rel="icon" href="/favicon.ico">
+```

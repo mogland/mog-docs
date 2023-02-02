@@ -158,17 +158,17 @@ JWT 过期时间（天）。
 
 获取方式，可选择 `gh` 或 `npm`。gh 即 GitHub Release，npm 即 npmjs.com。
 
-事实上，并不建议使用 npm 方式，这似乎会导致 rate limit
+事实上，并不建议使用 npm 方式，这似乎会导致 *rate limit*
 
 ### console.proxy\.gh
 
-- 类型：`string`
-- 默认值：`https://ghproxy.com`
+- 类型：`string | undefined`
+- 默认值：`无`
 
 GitHub Release 的代理地址。
 
 ::: info
-我们没有提供支持 npm 是因为我们从 npm 获取文件使用的是官方的一个接口 https://www.npmjs.com/package/${name}/file/${fileId}，而此接口似乎无镜像
+我们没有提供支持 npm 是因为我们从 npm 获取文件使用的是官方的一个接口 https://www.npmjs.com/package/${name}/file/${fileId} ，而此接口似乎无镜像
 :::
 
 ### core.listen_ip
