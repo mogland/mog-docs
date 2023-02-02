@@ -52,6 +52,7 @@ node main.js
 - *comments-service* - 评论服务模块
 - *friends-service* - 友情链接服务模块
 - *notification-service* - 通知服务模块
+- *themes-service* - 主题服务模块
 
 ## 拓展：使用 @vercel/ncc 重新打包
 
