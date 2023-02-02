@@ -4,6 +4,15 @@ title: 升级版本 | 迁移指南
 
 # 升级版本
 
+
+## 从 Mog v2.internal.alpha 升级到 Mog v2.internal.beta.0
+
+v2.internal.beta 对服务进行了补充以及重要的破坏性修改。主要针对的是配置文件配置项的改动：
+
+1.  x-service 将不再支持 `port`, `host` 配置项，全部服务将使用 redis 作为事件总线，默认情况下，只需要删除对应的配置项即可，若无配置可无视此项
+2. Core 内置基本模块在现有阶段暂时全部移除，在后续可能会继续引入，这取决于社区基本模块的需求量
+
+
 ## 从 Mog v1 升级到 Mog v2
 
 v1 至 v2 的技术栈改动不大，但是很重要，大部分沿用的是 v1 的技术栈，但是 v2 对数据模型和程序结构有一些重大的改动，其中有部分是修复了 v1 的一些设计缺陷导致的严重问题。
@@ -27,13 +36,6 @@ mongodump --db mog --out /data/db/mog
 mongorestore --db mog --dir /data/db/mog
 ```
 :::
-
-## 从 Mog v2.internal.alpha 升级到 Mog v2.internal.beta
-
-v2.internal.beta 对服务进行了补充以及重要的破坏性修改。主要针对的是配置文件配置项的改动：
-
-1.  x-service 将不再支持 `port`, `host` 配置项，全部服务将使用 redis 作为事件总线，默认情况下，只需要删除对应的配置项即可，若无配置可无视此项
-2. Core 内置基本模块在现有阶段暂时全部移除，在后续可能会继续引入，这取决于社区基本模块的需求量
 
 ## 从 Mog v0 升级到 Mog v1
 
