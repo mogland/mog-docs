@@ -137,6 +137,10 @@ export default defineConfigWithTheme<Config>({
               link: '/install/',
             },
             {
+              text: '使用 node 命令启动',
+              link: '/install/with-node',
+            },
+            {
               text: '自主构建',
               link: '/install/build',
             }
