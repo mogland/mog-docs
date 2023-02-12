@@ -7,10 +7,10 @@
 
 ---
 
-文章来自 [可愛い松 | NestJS 微服务通过订阅发布事件与其他技术栈交互](https://blog.iucky.cn/posts/programming/use-nestjs-microservice-with-other-tech)
+文章来自 [可愛い松 | NestJS 微服务通过订阅发布事件与其他技术栈交互](https://blog.iucky.cn/posts/programming/use-nestjs-microservice-with-other-tech), 但基于 Mog 做了部分补充
 :::
 
-如果你开发了一个微服务且想要让网关层来通用支持订阅事件，欢迎你来到 [mogland/core issues](https://github.com/mogland/core/issues) 提交你的服务，我们将会考虑将您的服务置入官方支持中。
+如果你想直接越过解释前往实践，可以直接看 [使用 NodeJS 写一个微服务](#使用-nodejs-写一个微服务) 这一节
 
 ## 创建一个微服务模块
 
@@ -148,7 +148,7 @@ D --> E[向 event.reply 发布数据]
 
 ![SCR-20230109-nrl](https://cdn.my-api.cn/user/w/asset-pic-picgo/2023-01-202301092137599.png)
 
-## 快速使用 NodeJS 启动一个微服务
+## 使用 NodeJS 写一个微服务
 
 使用 pnpm 安装上 redis，根据上方我所说的内容，抽出来一些功能函数，以提高可维护性。
 
@@ -236,7 +236,7 @@ const subscriber = client.duplicate();
 await subscriber.connect();
 const publisher = client.duplicate();
 await publisher.connect();
-const pattern = generagtePattern("user.get.master", false)
+const pattern = generagtePattern("<YOUR_EVENT_SETTING>", false)
 
 await subscriber.subscribe(pattern, async (message) => {
   const { id, data, pattern, isEmitter } = parseEventDataFromGateway(message)
@@ -257,6 +257,25 @@ node --watch service.js
 ```
 
 ![](https://cdn.my-api.cn/user/w/asset-pic-picgo/2023-01-202301102241094.jpeg)
+
+## 在 Mog Core 中注册事件
+
+在 Mog Core 中，我们需要在 Gateway 运行目录下创建一个 `events.yaml` 文件，它是用于注册非常规事件的，即非官方实现的事件，例如：`user.login`，`user.register` 等等。
+
+```yaml
+render: # controller --> {API}/render/*
+  - path: /events # {API}/render/events
+    method: get
+    handler: events.get # 发布活动
+    emit: true # 是否为 event-based 模式
+  - path: /events/{id} # {API}/render/events/{id}
+    method: get
+    handler: events.get.id
+```
+
+如上方例子，当请求 `{API}/render/events` 时，会触发 `events.get` 事件，由于 `emit` 为 true，因此 Gateway 会触发 `events.get` 事件，而不会开始监听 `.reply` 事件。
+
+但是下方的 `events.get.id` 事件，由于 `emit` 为 undefined，因此 Gateway 会同时监听 `events.get.id` 和 `events.get.id.reply` 事件，如果你的服务没有返回响应，那么 Gateway 会在 5 秒后返回一个超时的响应。
 
 ## 注意事项
 
