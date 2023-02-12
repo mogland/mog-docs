@@ -10,6 +10,7 @@
 import type { Config } from "@vue/theme";
 import Components from "unplugin-vue-components/vite";
 import { SearchPlugin } from "vitepress-plugin-search";
+import flexSearchIndexOptions from "flexsearch";
 import Unocss from "unocss/vite";
 import { presetAttributify, presetIcons, presetUno } from "unocss";
 import type { Plugin } from "vite";
@@ -268,8 +269,8 @@ export default defineConfigWithTheme<Config>({
   vite: {
     plugins: [
       SearchPlugin({
-        tokenize: "forward", // https://github.com/emersonbottero/vitepress-plugin-search/issues/11
-        previewLength: 62,
+        ...flexSearchIndexOptions,
+        tokenize: "full",
         buttonLabel: "搜索",
         placeholder: "搜索文档",
       }),
@@ -291,10 +292,5 @@ export default defineConfigWithTheme<Config>({
         ],
       }) as unknown as Plugin,
     ],
-    optimizeDeps: {
-      // vitepress is aliased with replacement `join(DIST_CLIENT_PATH, '/index')`
-      // This needs to be excluded from optimization
-      exclude: ["vitepress"],
-    },
   },
 });
