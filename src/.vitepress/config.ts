@@ -267,6 +267,9 @@ export default defineConfigWithTheme<Config>({
   },
 
   vite: {
+    build: {
+      ssr: false,
+    },
     plugins: [
       SearchPlugin({
         ...flexSearchIndexOptions,
