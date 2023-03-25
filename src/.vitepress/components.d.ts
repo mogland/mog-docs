@@ -14,7 +14,6 @@ declare module '@vue/runtime-core' {
     FeaturesList: typeof import('./components/FeaturesList.vue')['default']
     HomePage: typeof import('./components/HomePage.vue')['default']
     ListItem: typeof import('./components/ListItem.vue')['default']
-    TeamMembers: typeof import('./components/TeamMembers.vue')['default']
     VPFeatures: typeof import('./components/VPFeatures.vue')['default']
     VPTeamMembers: typeof import('./components/VPTeamMembers.vue')['default']
     VPTeamMembersItem: typeof import('./components/VPTeamMembersItem.vue')['default']
