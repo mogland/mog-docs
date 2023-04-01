@@ -62,16 +62,16 @@ export default defineConfigWithTheme<Config>({
     ["meta", { property: "og:title", content: "Mog" }],
     [
       "meta",
-      { property: "og:description", content: "一款永向未来的 CMS 博客系统" },
+      { property: "og:description", content: "一款弹性的模块化 CMS 博客系统" },
     ],
     ["meta", { property: "og:url", content: "https://mog.js.org" }],
     ["meta", { property: "og:image", content: "https://mog.js.org/logo.svg" }],
     ["meta", { name: "twitter:title", content: "Mog" }],
     [
       "meta",
-      { name: "twitter:description", content: "一款永向未来的 CMS 博客系统" },
+      { name: "twitter:description", content: "一款弹性的模块化 CMS 博客系统" },
     ],
-    ["meta", { name: "twitter:image", content: "https://mog.js.org/logo.svg" }],
+    ["meta", { name: "twitter:image", content: "https://repository-images.githubusercontent.com/410121979/404c046c-4d7e-49f7-9f68-d959b30a112e" }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     ["link", { rel: "mask-icon", href: "/logo.svg", color: "#ffffff" }],
     [
@@ -120,6 +120,12 @@ export default defineConfigWithTheme<Config>({
             ],
           },
           {
+            text: "衍生组织",
+            items: [
+              { text: "Mog Dev", link: "https://github.com/mogland-dev" },
+            ],
+          },
+          {
             text: "核心组件",
             items: [
               { text: "Mog-Core", link: "https://github.com/mogland/core" },
@@ -130,32 +136,6 @@ export default defineConfigWithTheme<Config>({
               // { text: 'Mog-MNE', link: 'https://github.com/mogland/MNE' },
             ],
           },
-          {
-            text: "评论组件",
-            items: [
-              {
-                text: "Mog-Comments-WC",
-                link: "https://github.com/mogland/mog-comments-wc",
-              },
-              {
-                text: "Mog-Comments-React",
-                link: "https://github.com/mogland/mog-comments-react",
-              },
-            ],
-          },
-          {
-            text: "前端主题",
-            items: [
-              {
-                text: "Mog-Theme-Tiny",
-                link: "https://github.com/mogland/mog-theme-tiny",
-              },
-              {
-                text: "Mog-Theme-Single",
-                link: "https://github.com/mogland/mog-theme-Single",
-              },
-            ],
-          },
         ],
       },
       {
@@ -163,7 +143,6 @@ export default defineConfigWithTheme<Config>({
         activeMatch: "^/about/",
         items: [
           { text: "常见问题", link: "/about/faq" },
-          { text: "RoadMap", link: "/about/roadmap" },
           { text: "版本发布", link: "/about/releases" },
           { text: "行为准则", link: "/about/code-of-conduct" },
         ],
