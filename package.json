@@ -16,7 +16,7 @@
     "jiti": "1.18.2",
     "markdown-it-task-lists": "2.1.1",
     "shiki": "^0.14.1",
-    "vitepress": "1.0.0-alpha.61",
+    "vitepress": "1.0.0-alpha.65",
     "vue": "latest"
   },
   "devDependencies": {
