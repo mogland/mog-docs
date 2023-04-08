@@ -1,5 +1,5 @@
 {
   "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": "file:///Users/wibus/wibus/Develop/nx-docs-next/.github/workflows/deploy.yml"
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/wibus/Developer/mog-docs/.github/workflows/deploy.yml"
   }
 }

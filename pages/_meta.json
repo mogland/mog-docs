@@ -1,0 +1,56 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Mog",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "文档"
+  },
+  "config": {
+    "title": "配置",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "toc": true
+    }
+  },
+  "development": {
+    "title": "开发",
+    "type": "page"
+  },
+  "blog": {
+    "title": "博客",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "about": {
+    "title": "关于",
+    "type": "menu",
+    "items": {
+      "faq": {
+        "title": "常见问题",
+        "href": "/about/faq"
+      },
+      "release": {
+        "title": "版本发布",
+        "href": "/about/release"
+      }
+    },
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "github": {
+    "title": "GitHub ↗",
+    "type": "page",
+    "href": "https://github.com/mogland/core",
+    "newWindow": true
+  }
+}
