@@ -9,21 +9,22 @@
   },
   "docs": {
     "type": "page",
-    "title": "Documentation"
+    "title": "文档"
   },
   "config": {
-    "title": "Config",
+    "title": "配置",
     "type": "page",
     "theme": {
-      "sidebar": false
+      "sidebar": false,
+      "toc": true
     }
   },
   "development": {
-    "title": "Development",
+    "title": "开发",
     "type": "page"
   },
   "blog": {
-    "title": "Blog",
+    "title": "博客",
     "type": "page",
     "theme": {
       "sidebar": false
