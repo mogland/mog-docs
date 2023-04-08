@@ -1,23 +1,27 @@
-# Nextra Docs Template 
+# Mog Documentation
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## Contributing 贡献
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+这个站点使用的是 Nextra. 站点内容使用 MDX 编写，文件都在根目录中. 如果只有一些简单的修改，你可以直接在 GitHub 网页端进行修改并新建一个 Pull Request.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+在本地开发中，[pnpm](https://pnpm.io/) 被选用为项目的包管理器，你需要使用 pnpm 安装依赖：
 
-## Quick Start
+```bash
+pnpm i
+pnpm run dev
+pnpm run build
+pnpm run start
+```
 
-Click the button to clone this repository and deploy it on Vercel:
+**请注意！请务必在修改后使用 `build` 和 `start` 查看构建产物是否正常输出！**
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## Working on the content 修改文字
 
-## Local Development
+- 关于支持的 Markdown 扩展和在 Markdown 内部使用 React 语法的能力，请参阅 Nextra 文档
+- 有关编写和维护文档内容的规则和建议，请参阅编写指南。
 
-First, run `pnpm i` to install the dependencies.
+## Guide 编写指南
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+**<u>编写内容的时候需要注意的事情</u>**：
 
-## License
-
-This project is licensed under the MIT License.
+1. 中文与英文之间请保留一个空格，如`测试 test 测试`
