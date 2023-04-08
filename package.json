@@ -1,40 +1,38 @@
 {
-  "name": "docs",
-  "version": "2.0.0-alpha.0",
-  "private": true,
+  "name": "nextra-docs-template",
+  "version": "0.0.1",
+  "description": "Nextra docs template",
   "scripts": {
-    "dev": "vitepress dev src --port 3333",
-    "build": "vitepress build src",
-    "build-no-prefetch": "vitepress build src && node src/.vitepress/scripts/build-pwa.mjs",
-    "serve": "vitepress serve src",
-    "preview-https": "pnpm run build && serve src/.vitepress/dist"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+  },
+  "author": "Shu Ding <g@shud.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuding/nextra-docs-template/issues"
+  },
+  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
-    "@vue/theme": "2.2.1",
-    "@vueuse/core": "9.13.0",
-    "@vueuse/head": "1.1.23",
-    "jiti": "1.18.2",
-    "markdown-it-task-lists": "2.1.1",
-    "shiki": "^0.14.1",
-    "vitepress": "1.0.0-alpha.61",
-    "vue": "latest"
+    "@vercel/og": "^0.5.1",
+    "autoprefixer": "^10.4.14",
+    "clsx": "^1.2.1",
+    "framer-motion": "^10.10.0",
+    "next": "^13.0.6",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "1.1.16",
-    "@unocss/reset": "0.50.6",
-    "@vitejs/plugin-vue": "latest",
-    "esno": "0.16.3",
-    "fast-glob": "3.2.12",
-    "flexsearch": "^0.7.31",
-    "https-localhost": "4.7.1",
-    "markdown-it": "^13.0.1",
-    "pathe": "1.1.0",
-    "segment": "^0.1.3",
-    "unocss": "0.50.6",
-    "unplugin-vue-components": "0.24.1",
-    "vite": "4.2.1",
-    "vite-plugin-pwa": "0.14.6",
-    "vitepress-plugin-search": "1.0.4-alpha.19",
-    "workbox-window": "6.5.4"
+    "@types/node": "18.11.10",
+    "@types/react": "^18.0.33",
+    "typescript": "^4.9.3"
   }
 }

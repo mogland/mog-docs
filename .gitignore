@@ -1,22 +1,2 @@
-# Ignore all files in the dist directory
-dist
-
-**/.vitepress/dist
-
-# Ignore all files in the modules directory
-
+.next
 node_modules
-
-# Ignore all files in the .idea directory
-
-.idea
-
-# Ignore all files in the .vscode directory
-
-.vscode
-
-
-# Vitepress cache
-
-src/.vitepress/dist
-src/.vitepress/cache

@@ -1,0 +1,24 @@
+{
+  "-- basic": {
+    "type": "separator",
+    "title": "基础"
+  },
+  "why": "为什么选择 Mog？",
+  "index": "快速起步",
+  "features": "主要功能",
+  "-- install": {
+    "type": "separator",
+    "title": "进阶安装"
+  },
+  "with-node": "使用 NodeJS 启动",
+  "custom-setting": "自定义配置",
+  "build": "自主构建",
+  "-- guide": {
+    "type": "separator",
+    "title": "指南"
+  },
+  "migrate": {
+    "title": "迁移指南"
+  },
+  "usages": "使用指南"
+}

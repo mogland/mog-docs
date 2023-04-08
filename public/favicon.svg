@@ -1,0 +1,17 @@
+<svg height="500px" viewBox="0 0 500 500" version="1.1">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-84.000000, -84.000000)">
+          <g transform="translate(78.000000, 84.000000)">
+            <rect fill="#F7DCB4" x="6" y="0" width="500" height="500" rx="75"></rect>
+            <g transform="translate(0.000000, 23.000000)">
+              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="154" cy="186" rx="51" ry="57"></ellipse>
+              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="358" cy="186" rx="51" ry="57"></ellipse>
+              <ellipse fill="#FFFFFF" fill-rule="nonzero" cx="138.5" cy="182" rx="17.5" ry="18"></ellipse>
+              <ellipse fill="#FFFFFF" fill-rule="nonzero" cx="341.5" cy="182" rx="17.5" ry="18"></ellipse>
+              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="256.5" cy="254" rx="20.5" ry="18"></ellipse>
+              <path d="M236,300 C249.666667,330.666667 263.333333,330.666667 277,300" id="路径" stroke="#3F3F3F" stroke-width="8"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+</svg>

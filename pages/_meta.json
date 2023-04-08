@@ -1,0 +1,38 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Mog",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  },
+  "config": {
+    "title": "Config",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "development": {
+    "title": "Development",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "github": {
+    "title": "GitHub ↗",
+    "type": "page",
+    "href": "https://github.com/mogland/core",
+    "newWindow": true
+  }
+}

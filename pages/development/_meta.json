@@ -1,0 +1,9 @@
+{
+  "--": {
+    "type": "separator",
+    "title": "开发者"
+  },
+  "extend-service": "拓展新的服务模块",
+  "theme": "开发新的主题",
+  "using-comments": "在其他地方使用评论组件"
+}
