@@ -1,17 +1,36 @@
-<svg height="500px" viewBox="0 0 500 500" version="1.1">
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-84.000000, -84.000000)">
-          <g transform="translate(78.000000, 84.000000)">
-            <rect fill="#F7DCB4" x="6" y="0" width="500" height="500" rx="75"></rect>
-            <g transform="translate(0.000000, 23.000000)">
-              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="154" cy="186" rx="51" ry="57"></ellipse>
-              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="358" cy="186" rx="51" ry="57"></ellipse>
-              <ellipse fill="#FFFFFF" fill-rule="nonzero" cx="138.5" cy="182" rx="17.5" ry="18"></ellipse>
-              <ellipse fill="#FFFFFF" fill-rule="nonzero" cx="341.5" cy="182" rx="17.5" ry="18"></ellipse>
-              <ellipse fill="#3F3F3F" fill-rule="nonzero" cx="256.5" cy="254" rx="20.5" ry="18"></ellipse>
-              <path d="M236,300 C249.666667,330.666667 263.333333,330.666667 277,300" id="路径" stroke="#3F3F3F" stroke-width="8"></path>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 5</title>
+    <defs>
+        <filter x="-5.9%" y="-6.6%" width="111.8%" height="113.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#050922" offset="0%"></stop>
+            <stop stop-color="#6EE6C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#050922" offset="0%"></stop>
+            <stop stop-color="#6EE6C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#050922" offset="0%"></stop>
+            <stop stop-color="#6EE6C7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="画板备份-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="default-monochrome" filter="url(#filter-1)" transform="translate(62.000000, 81.000000)" fill-rule="nonzero">
+            <g id="6cad102b-508d-472b-89db-b511a74aae75">
+                <path d="M99.806048,200.527241 L111.181659,265.012438 L80.8984627,283.346772 L80.8984627,350 L55.9225908,350 L55.9225908,257.541736 L99.806048,200.527241 Z M323.773578,239.903989 L309.012461,276.24393 L358.649726,350 L384.083728,350 L323.773578,239.903989 Z" id="形状" fill="url(#linearGradient-2)"></path>
+                <path d="M389,150.42363 L89.095669,150.42363 C59.9559704,148.030068 37.0440996,123.631303 37.0440996,93.8577262 C37.0440996,62.5195774 62.4183158,37.1089001 93.7247228,37.0699804 L93.8064119,37.0738723 L93.8803212,37.0699804 C100.608459,37.2257518 106.891959,33.7190645 110.294462,27.9095984 C113.696965,22.1001322 113.683365,14.9015319 110.258936,9.10497646 C106.834507,3.308421 100.537803,-0.174475399 93.8103019,0.00674249916 L93.1606784,0.01063447 C41.6498135,0.357019871 0,42.2385176 0,93.8499423 C0,145.675425 41.99991,187.693142 93.802522,187.693142 L100.563274,187.693142 L162.464225,350 L187.780092,350 L167.116619,283.711953 L205.207118,240.511078 L256.507925,240.511078 L256.507925,350 L281.559274,350 L281.559274,283.711953 L342.157088,208.54243 C350.871397,213.575311 361.607222,213.575106 370.321339,208.541891 C379.035456,203.508677 384.404318,194.206925 384.405956,184.139773 C384.420064,177.134582 381.814126,170.377578 377.100609,165.197551 L389,150.42363 Z" id="路径" fill="url(#linearGradient-3)"></path>
+                <polyline id="路径" fill="url(#linearGradient-4)" points="101.398104 187.609842 163.332417 350 188.661927 350 167.987317 283.677933"></polyline>
             </g>
-          </g>
         </g>
-      </g>
+    </g>
 </svg>
