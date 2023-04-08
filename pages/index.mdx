@@ -15,9 +15,9 @@ import docsCardDark from "../public/images/console-dark.png";
 <div className="home-content">
   <div className="content-container">
     <h1 className="headline">Create your own <br className='sm:block hidden'/>unique site with Mog.</h1>
-    <p className="subtitle">Modular, powerful and flexible Blog System. <br className='sm:block hidden'/>Open source. Free forever.</p>
+    <p className="subtitle">模块化，弹性化、强大的博客系统。 <br className='sm:block hidden'/>开源，永久免费。</p>
     <p className="subtitle">
-      <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
+      <Link className={styles.cta} href="/docs">5 分钟拥有自己的 Mog <span>→</span></Link>
     </p>
   </div>
 <style jsx>{`
@@ -211,20 +211,21 @@ import docsCardDark from "../public/images/console-dark.png";
         <Feature index={0} large centered id="docs-card" href="/docs">
           <Image src={docsCard} alt="Background" loading="eager" />
           <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
-          <h3>Full-power blog site <br className="show-on-mobile"/>in minutes.</h3>
+          <h3>几分钟内创建<br className="show-on-mobile"/>强大的博客网站。</h3>
         </Feature>
         <Feature index={1} centered className="card-with-border" href="/docs/why">
           <div className="h-full flex flex-col justify-between">
-            <h3>All features are <br className="show-on-mobile"/>always <span style={{ fontWeight: 300 }}>flexible</span>.</h3>
+            <h3>所有功能<br className="show-on-mobile"/>都是<span style={{ fontWeight: 300 }}>弹性的</span>.</h3>
             <div className='text-left mb-8'>
-            Mog breaks through the adoption of a microservice architecture, which is modular and flexible in design. You can easily customize it to meet your needs.
+            Mog 突破性采用微服务架构，模块化和弹性化设计，使您的博客更加稳定、可扩展和可维护。
+            您可以轻松地定制它以满足您的个人自定义需求，更可以通过主题和活动系统轻松地扩展 Mog。
             </div>
             <div>
               <div className={styles.optimization}>
                 <div style={{ fontSize: '.9rem' }} className="leading-8">
                   <code>{`[Post,User,Theme,Console,Auth]`}</code>
                   <br />
-                  <code>{`> All features are in one`}</code>
+                  <code>{`> 功能聚合于一体, 一旦出错全部功能下线 `}</code>
                 </div>
               </div>
               <div className="flex justify-center text-neutral-400 my-6">
@@ -236,7 +237,7 @@ import docsCardDark from "../public/images/console-dark.png";
                 <div style={{ fontSize: '.9rem' }} className="leading-8">
                   <code>{`[Post][User][Theme][Console][Auth]`}</code>
                   <br />
-                  <code>{`> All features are flexible`}</code>
+                  <code>{`> 每个功能都是独立的, 出错只会影响单个功能 `}</code>
                 </div>
               </div>
             </div>
@@ -295,16 +296,18 @@ import docsCardDark from "../public/images/console-dark.png";
               position: 'relative',
               mixBlendMode: 'difference',
             }}
-          >Dark <br/>mode <br/>included.</motion.h3>
+          >黑暗模式 <br/>原生适配.</motion.h3>
         </Feature>
         <Feature index={3} href="/services/render-service">
-          <h3>Advanced syntax <br className="show-on-mobile"/>text language solution.</h3>
-          <p>Performant and reliable and extensible <strong>Text Macros Function</strong> & <strong>Markup Language Settings</strong>.</p>
+          <h3>先进的<br className="show-on-mobile"/>文本语言渲染解决方案。</h3>
+          <p>
+            高性能、可靠、可扩展的<strong>文本宏函数</strong>和<strong>标记语言设置</strong>。在渲染过程中，Mog 会将大量的文本预处理工作交给后端服务，从而减轻前端的负担。
+          </p>
         </Feature>
         <Feature index={6}>
-          <h3>And more...</h3>
-          <p>Pluggable Themes / Backup system / Standlone Comments System...<br/>A lot of new features to be explored.</p>
-          <p className="subtitle"><Link className="!no-underline" href="/docs">Start using Mog →</Link></p>
+          <h3>更多特性...</h3>
+          <p>可插拔主题 / 备份系统 / 独立的评论系统... <strong><i>更多新特性等待您的探索。</i></strong></p>
+          <p className="subtitle"><Link className="!no-underline" href="/docs">拥有你自己的 Mog →</Link></p>
         </Feature>
       </Features>
     </div>
