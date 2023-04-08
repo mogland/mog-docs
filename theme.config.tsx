@@ -45,10 +45,11 @@ const config: DocsThemeConfig = {
   head: function useHead() {
     const { title } = useConfig()
     const { route } = useRouter()
-    const socialCard =
-      route === '/' || !title
-        ? 'https://mog.js.org/og.png'
-        : `https://mog.js.org/api/og?title=${title}`
+    // const socialCard =
+    //   route === '/' || !title
+    //     ? 'https://mog.js.org/og.png'
+    //     : `https://mog.js.org/api/og?title=${title}`
+    const socialCard = 'https://mog.js.org/og.png'
 
     return (
       <>
