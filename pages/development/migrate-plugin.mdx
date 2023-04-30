@@ -2,7 +2,7 @@ import { Callout } from "nextra-theme-docs";
 
 # 开发第三方数据迁移插件
 
-Mog 提供了一个第三方数据迁移导入的接口，你可以通过这个接口来开发一个迁移插件，将你的数据迁移到 Mog。
+Mog 提供了一个数据迁移导入的接口，你可以通过这个接口来开发一个迁移插件，将你的数据迁移到 Mog。
 
 目前支持以下数据的迁移：
 
@@ -11,7 +11,7 @@ Mog 提供了一个第三方数据迁移导入的接口，你可以通过这个�
 - 评论 - `comments`
 - 分类 - `categories`
 - 用户信息 - `user`
-- 友链 - `user`
+- 友链 - `friends`
 
 <Callout type="warning">
   用户信息中没有导入密码的功能，在导入信息后，Mog
@@ -38,8 +38,8 @@ import { PostModel } from "~/apps/page-service/src/model/post.model";
 
 type MigratePost = Omit<
   PostModel,
-  "id" | "categoryId" | "category" | "images"
-> & { category: string };
+  'id' | 'category' | 'images' | 'categoryId'
+> & { category_id: string };
 ```
 
 有几点是需要注意的：
