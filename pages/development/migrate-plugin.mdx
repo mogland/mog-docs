@@ -6,102 +6,97 @@ Mog 提供了一个第三方数据迁移导入的接口，你可以通过这个�
 
 目前支持以下数据的迁移：
 
-- 文章与页面 - `posts` & `pages`
+- 文章 - `posts`
+- 页面 - `pages`
 - 评论 - `comments`
 - 分类 - `categories`
-- 用户信息 - `master`
+- 用户信息 - `user`
+- 友链 - `user`
 
 <Callout type="warning">
-用户信息中没有导入密码的功能，在导入信息后，Mog 将为您重新生成一个临时密码，您可以在控制台仪表盘中更改它
+  用户信息中没有导入密码的功能，在导入信息后，Mog
+  将为您重新生成一个临时密码，您可以在控制台仪表盘中更改它
 </Callout>
 
-## 数据格式
+## 数据
 
-### 文章或页面
-
-```jsonc
-{
-  "title": "string",
-  "slug": "string",
-  "category": "string", // use category slug (only for posts)
-  "tags": ["string"], // (only for posts)
-  "created": "string", // ISO 8601 - YYYY-MM-DDTHH:mm:ss.sssZ
-  "modified": "string", // ISO 8601 - YYYY-MM-DDTHH:mm:ss.sssZ
-  "text": "string",
-  "fields": {
-    "field1": "string",
-    "field2": "string"
-  },
-  "order": 0, // (only for pages)
-  "subtitle": "string", // (only for pages)
-  "summary": "string", // (only for posts)
-  "copyright": "boolean", // (only for posts)
-  "count": {
-    "read": 0,
-    "like": 0
-  },
-  "hide": false, // (only for posts)
-  "password": "string", // (only for posts)
-  "rss": true // (only for posts)
-},
+```ts
+interface MigrateData {
+  posts: MigratePost[];
+  pages: MigratePage[];
+  user: MigrateUser;
+  friends: MigrateFriend[];
+  comments: MigrateComment[];
+  categories: MigrateCategory[];
+}
 ```
 
+### 文章 `Post`
 
-在生成迁移文件时有几点是需要注意的：
+```ts
+import { PostModel } from "~/apps/page-service/src/model/post.model";
+
+type MigratePost = Omit<
+  PostModel,
+  "id" | "categoryId" | "category" | "images"
+> & { category: string };
+```
+
+有几点是需要注意的：
 
 - `slug` 字段必须是唯一的
-- `category` 字段必须是已经存在的分类的 `slug` （需要在 categories 中存在），否则 Mog 会创建一个新的分类
+- `category` 字段是填写已经存在的分类的 `slug` （需要在 categories 中存在），否则 Mog 会自动创建一个新的分类
 - `created` 和 `modified` 字段必须是 ISO 8601 格式的时间字符串
--  字段必须是 ISO 8601 格式的时间字符串
-- `order` 字段必须是数字
-- `hide` 一旦设置为 `true`，则文章将不会在文章列表接口和RSS中显示
+- `hide` 一旦设置为 `true`，则文章将不会在文章列表接口和 RSS 中显示
 
+### 页面 `Page`
 
-### 分类
+```ts
+import { PageModel } from "~/apps/page-service/src/model/page.model";
+type MigratePage = Omit<PageModel, "id" | "images">;
+```
 
-```jsonc
-{
-  "name": "string", // 分类名称
-  "slug": "string", // 分类别名
-  "icon": "string", // 分类图标 (url)
-  "description": "string" // 分类描述
-}
+### 分类 `Category`
+
+```ts
+import { CategoryModel } from "~/apps/page-service/src/model/category.model";
+type MigrateCategory = Omit<CategoryModel, "id" | "type" | "created">;
 ```
 
 其中 `slug` 字段必须是唯一的，图标可以是一个 url（推荐），也可以是一个 base64 编码的图片
 
-### 评论
+### 评论 `Comment`
 
-评论的导入需要按照一定的顺序，首先导入父级评论，然后导入子级评论，最后导入子级评论的子级评论，以此类推
+```ts
+import { CommentsModel } from "~/apps/comments-service/src/comments.model";
 
-```jsonc
-{
-  "post-slug": "string", // the post of the comment
-  "id": "string", // the id of the comment (you can randomize it, but it must be unique, it will be used to identify the parent comment)
-  "parent": "string", // the id of the parent comment (if it is a reply)
-  "children": ["string"], // the ids of the children comments (if it is a parent comment)
-  "author": "string",
-  "email": "string",
-  "url": "string",
-  "text": "string",
-  "status": "string" // pending, approved, spam, trash, private
-}
+type MigrateComment = Omit<
+  CommentsModel,
+  "commentsIndex" | "key" | "reaction" | "parent" | "children"
+> & { parent: string; children: string[] };
 ```
 
-- 里面的 `post-slug` 字段是必须的，它将会被用来匹配文章，如果文章不存在，那么这条评论将会被忽略
+- 里面的 `pid` 字段是必须的，它将会被用来匹配文章，你需要在里面填写对应文章的 slug，如果文章不存在，那么这条评论将会被忽略
 - `id` 字段必须是唯一的，它将会被用来匹配父级评论，如果父级评论不存在，那么这条评论将会被忽略
 
-### 用户信息
+### 友链 `Friend`
 
-```jsonc
-{
-  "username": "string",
-  "nickname": "string",
-  "description": "string",
-  "avatar": "string",
-  "email": "string",
-  "url": "string"
-}
+```ts
+type MigrateFriend = Omit<
+  FriendsModel,
+  "id" | "token" | "autoCheck" | "feedContents"
+>;
+```
+
+### 用户 `User`
+
+```ts
+import { UserModel } from "~/apps/user-service/src/user.model";
+
+type MigrateUser = Omit<
+  UserModel,
+  "password" | "lastLoginTime" | "lastLoginIp" | "apiToken" | "created" | "id"
+>;
 ```
 
 用户信息中没有导入密码的功能，在导入信息后，Mog 将为您重新生成一个临时密码，您可以在控制台仪表盘中更改它
