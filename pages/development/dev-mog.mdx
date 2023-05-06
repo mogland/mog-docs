@@ -1,0 +1,44 @@
+# 启动 Mog 开发模式
+
+## 1. 从 Github 上克隆下 Mog 源码
+
+```bash
+git clone git@github.com:mogland/core.git
+```
+
+## 2. 安装依赖
+
+Mog 使用 pnpm 管理依赖，所以你必须要使用 pnpm 来安装依赖。
+
+```bash
+pnpm i
+```
+
+## 3. 启动开发模式
+
+```bash
+pnpm dev # / pnpm start 
+```
+
+请注意，此项命令将有可能导致~~您的电脑彻底死机（CPU 100%）~~所以请确保您的电脑配置足够好，否则你可以使用下面的命令来启动开发模式：
+
+```bash
+pnpm start:<service-name>
+```
+
+你可以在 package.json 中查看所有的命令。通过上面的命令，你可以启动指定的服务，而不是直接同时启动所有的服务，可以有效的减少电脑的负担。
+
+## 4. 打包
+
+```bash
+pnpm build
+pnpm bundle
+```
+
+目前还暂时无法只构建某个服务，所以你只能先一次性构建所有的服务，再使用 bundle 命令来打包。
+
+另外，如果你需要使用根目录的 `ecosystem.config.js`, 你必须要执行 `bundle`
+
+---
+
+其他内容，我认为 [Mog CONTRIBUTING](https://github.com/mogland/core/blob/main/CONTRIBUTING.md) 中已经写的很清楚了，所以我就不再赘述了。
