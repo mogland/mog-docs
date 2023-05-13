@@ -37,7 +37,7 @@ jobs:
       - name: Build project
         run: |
           pnpm i
-          pnpm run build
+          pnpm run build:rss
           npx next export
       - name: Add CNAME
         run: |
