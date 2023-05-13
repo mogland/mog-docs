@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:rss": "node scripts/rss.js && next build",
     "start": "next start"
   },
   "repository": {
@@ -33,6 +34,8 @@
   "devDependencies": {
     "@types/node": "18.16.8",
     "@types/react": "^18.0.33",
+    "gray-matter": "^4.0.3",
+    "rss": "^1.2.2",
     "typescript": "^5.0.4"
   }
 }
