@@ -53,8 +53,8 @@ export default async function (req) {
                 y2="0%"
                 id="linearGradient-f409qwt-o5-1"
               >
-                <stop stop-color="#050922" offset="0%"></stop>
-                <stop stop-color="#6EE6C7" offset="100%"></stop>
+                <stop stopColor="#050922" offset="0%"></stop>
+                <stop stopColor="#6EE6C7" offset="100%"></stop>
               </linearGradient>
               <linearGradient
                 x1="0%"
@@ -63,8 +63,8 @@ export default async function (req) {
                 y2="0%"
                 id="linearGradient-f409qwt-o5-2"
               >
-                <stop stop-color="#050922" offset="0%"></stop>
-                <stop stop-color="#6EE6C7" offset="100%"></stop>
+                <stop stopColor="#050922" offset="0%"></stop>
+                <stop stopColor="#6EE6C7" offset="100%"></stop>
               </linearGradient>
               <linearGradient
                 x1="0%"
@@ -73,8 +73,8 @@ export default async function (req) {
                 y2="0%"
                 id="linearGradient-f409qwt-o5-3"
               >
-                <stop stop-color="#050922" offset="0%"></stop>
-                <stop stop-color="#6EE6C7" offset="100%"></stop>
+                <stop stopColor="#050922" offset="0%"></stop>
+                <stop stopColor="#6EE6C7" offset="100%"></stop>
               </linearGradient>
             </defs>
             <g

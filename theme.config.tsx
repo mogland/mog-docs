@@ -6,16 +6,16 @@ const logo = (
     <svg height="32" viewBox="0 0 232 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <defs>
         <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-f409qwt-o5-1">
-          <stop stop-color="#050922" offset="0%"></stop>
-          <stop stop-color="#6EE6C7" offset="100%"></stop>
+          <stop stopColor="#050922" offset="0%"></stop>
+          <stop stopColor="#6EE6C7" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-f409qwt-o5-2">
-          <stop stop-color="#050922" offset="0%"></stop>
-          <stop stop-color="#6EE6C7" offset="100%"></stop>
+          <stop stopColor="#050922" offset="0%"></stop>
+          <stop stopColor="#6EE6C7" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-f409qwt-o5-3">
-          <stop stop-color="#050922" offset="0%"></stop>
-          <stop stop-color="#6EE6C7" offset="100%"></stop>
+          <stop stopColor="#050922" offset="0%"></stop>
+          <stop stopColor="#6EE6C7" offset="100%"></stop>
         </linearGradient>
       </defs>
       <g id="Mog-Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
