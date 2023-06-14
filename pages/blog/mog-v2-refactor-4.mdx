@@ -1,0 +1,62 @@
+---
+title: Mog Odyssey 2.0 加入部分特性 - Stage 4 Issue
+description: 第四阶段加入主题系统、并重新设计了 README、在后端也支持了内置控制台、以及带来了全新的评论组件
+date: 2023-03-12
+---
+
+# Mog Odyssey 2.0 加入部分特性 - Stage 4 Issue
+
+> 全部修改日志在 https://github.com/mogland/core/issues/605 
+
+## 主题系统 <small>by @wibus-wee</small>
+
+我们新增了一个主题系统服务 (themes-service)，它将配有 Fastify + `@fastify/point-of-view`，目前我们支持了 `.ejs` 格式的模板引擎，在 Stage 5 我们可能会加入自定义渲染器功能。
+
+主题系统支持 i18n，配置十分方便，仅需要 `i18n.yaml` + `_i()` 即可使用：
+
+```yaml
+# config.yaml
+language: zh # or `en`
+
+# i18n.yaml
+en:
+  hello: 'Hello'
+zh:
+  hello: '你好'
+```
+
+```ejs
+<!-- zh：你好 | en：Hello -->
+<%- _i('hello') %>
+```
+
+除此之外，还支持了自定义主题插件支持，它能让你在渲染前处理某些数据，不过目前它还有些**缺陷**，有待 Stage 5 中继续改进。
+
+
+## 重新设计 Core README <small>by @wibus-wee</small>
+
+总是认为之前的 README 太过花哨，而我们在第四阶段中，重新设计了 README。
+
+- 移除了 `Motivation 动机` 章节
+- 移除了 `Table of Contents 目录`章节
+- 重新设计了 `Contributors` 章节
+- 移除了 `Activity` 章节
+- 移除了 `@allcontributors` 机器人
+- 国际化 README
+- 将 `#` --> `##`，以去除默认样式中过长的下划线
+
+与我们而言，这是一个小改进。
+
+## [Core] 支持内置控制台 <small>by @wibus-wee</small>
+
+为了便捷性，我们将控制台移入了 Core Gateway 服务中，需要注意的是，它并不是由模板引擎制作的，控制台的仓库依然在 [mogland/console](https://github.com/mogland/console)，但 Core 将会把全部请求转接到后端中，把 Cookie 等注入请求返回中，请求远端 HTML 等文件，将内容返回。
+
+我们增加了关于后台的自定义配置，由于这项功能仍处于测试阶段，我们默认将会把它关闭，如果需要启动你需要在配置文件中启动它。相关文档已更新
+
+## 全新的评论组件 mog-comments-wc <small>by @wibus-wee</small>
+
+Mog 评论服务的设计初衷是为了让用户可以在自己的网站上使用评论功能，但是也可以在其他更多的地方使用。因此它更像是一个独立的评论系统，而不是一个专属于 Mog 的内部组件。
+
+为了方便主题开发，我们使用 @jwcjs 开发了通用的评论组件。多亏于 Mog 评论服务的设计，它可以在任何地方使用，比如 `Hexo`。在后期我们将会实现对应的专属评论控制面板
+
+<img src="https://user-images.githubusercontent.com/62133302/215319021-147d3c16-0da6-4684-a8e1-c0e3b783accd.png" width="700" />

@@ -8,8 +8,8 @@
     }
   },
   "docs": {
-    "type": "page",
-    "title": "文档"
+    "title": "文档",
+    "type": "page"
   },
   "config": {
     "title": "配置",

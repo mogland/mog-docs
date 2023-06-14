@@ -1,0 +1,111 @@
+---
+title: Mog Odyssey 2.0 错误修复与项目重构 - Stage 5 Issue
+description: 第五阶段注重于错误修复与项目重构，新增了一些自定义型的功能，并且推出了全新的语言渲染服务，这是一个重大的更新，我们将会在这个阶段中实现它。
+date: 2023-05-28
+---
+
+# Mog Odyssey 2.0 错误修复与项目重构 - Stage 5 Issue
+
+> *GitHub · Mog Stage 5: https://github.com/mogland/core/issues/661*
+
+## [Icon] 全新的图标 <small>by @Jinhwan Kim</small>
+
+有关这个图标的版权，你可以前往[「常见问题」](/about/faq#%E5%9B%BE%E6%A0%87%E8%AE%BE%E8%AE%A1)查看
+
+## [Core] 自定义发布活动与返回接口 <small>by @wibus-wee</small>
+
+通过定义配置文件，你将可以通过定义发布活动来调度你自己的服务，比如说：
+
+```yaml
+render: # controller --> {API}/render/*
+  - path: /events # {API}/render/events
+    method: get
+    handler: events.get # 发布活动
+  - path: /events/{id} # {API}/render/events/{id}
+    method: get
+    handler: events.get.id
+  - path: /events
+    method: post
+    handler: events.post
+```
+
+这样，你就可以通过 `GET /events` 来获取全部活动，通过 `GET /events/{id}` 来获取指定活动，通过 `POST /events` 来发布活动。
+
+![](https://user-images.githubusercontent.com/62133302/218303740-ba200f3e-df69-42a3-a0a4-e980e9b7d8fe.png)
+
+## [Core] 自定义定时任务支持 <small>by @wibus-wee</small>
+
+定时任务是一个非常重要的功能，它可以让你在指定的时间执行指定的任务，比如说，你可以在每天的 00:00:00 发送一封访客信息邮件给自己，或者在每天的 00:00:00 清理一次数据库。
+
+于是我们做了一个较为简单的定时任务系统，它具有以下功能
+
+- 不同的任务类型（访问 URL，广播事件）
+- 及其自由的任务操作参数
+- 支持任务执行进行后续操作
+- 收集任务错误日志
+
+暂时来说较为简陋，在后续阶段我们会继续完善它。
+
+## [Core] 其他新增功能 <small>by @wibus-wee</small>
+
+- 数据备份恢复支持
+- 静态资源管理服务支持
+- 友链服务支持获取全部状态的友链数据
+- 在无密码注册用户的情况下自动生成临时密码
+
+你可以看到，我们本次的功能增强都是围绕着**自定义**进行的，我们希望用户可以通过自定义来实现更多的功能，而不是依赖于我们的功能。
+
+## [Console] 使用 @vercel/swr 请求后端数据 <small>by @wibus-wee</small>
+
+- 重构几乎所有触发的请求
+- 重构几乎所有的 Hooks，减少明面上的 useEffect 狂魔
+- 重构几乎所有页面的请求钩子
+- 将重复组件抽象为 `ActionButton` 组件
+
+另外，我们还使用新的 Toast 组件以替换原有有缺陷的通知组件
+
+## [Console] 控制台支持刷新版本缓存 <small>by @wibus-wee</small>
+
+我们内置控制台的资源获取策略是：**优先使用缓存，如果缓存不存在则请求远端资源**，这样做的好处是可以减少请求次数，但是也会导致一些问题，比如：缓存所储存的版本过期，但是我们的控制台并不会主动刷新缓存，这就导致了用户无法获取到最新的控制台。
+
+为了解决这个问题，我们在 Dashboard 页面底部新增了一个刷新缓存的功能，它将会在用户点击刷新按钮时，刷新缓存，这样就可以解决这个问题了。
+
+![CleanShot 2023-05-28 at 21 01 10@2x](https://github.com/mogland/core/assets/62133302/6d670818-f2b7-45a7-8780-e14f099478ea)
+
+## [Docs] 使用 Nextra 作为文档工具 <small>by @wibus-wee</small>
+
+鉴于 Vitepress 的部分功能不足，我们决定使用 Nextra 作为文档工具，Nextra 是一个基于 Next.js 的文档工具，它的功能十分强大，我们将会在后续的版本中继续使用它。
+
+![](https://github.com/mogland/core/assets/62133302/6de6b36b-5fa8-4683-acfc-ee4f7b7735ae)
+
+> 然后抄了“一些” Nextra 官网的样式
+
+## [Dev] 渲染模块实现 <small>by @wibus-wee</small>
+
+GitHub: [@mogland-dev/mog-render-service](https://github.com/mogland-dev/mog-render-service)
+
+我们之前曾说过要在 v2.0 中实现一个独立的渲染模块，它将会是一个独立的服务，它将会负责渲染 Markdown 和 Djot 文件，并且还支持**文本宏**，目前它已经可以正常工作了，但是我们还需要对它进行一些优化。
+
+你可以在文章中输入如这样的内容：
+
+```markdown
+[[ #blur($title) ]] was created on [[ #dayjs($created).format("MMMMDD, YYYY") ]]. 
+```
+
+接着渲染模块的文本宏模块将会将其渲染为：
+
+```markdown
+<span class="text blur">My First Blog Post</span> was created on Sat, 25 Mar 2023 15:26:37 GMT. 
+```
+
+这个 feature 的想法来自于 Mix space，但是这次我们稍微优化了算法，并更容易拓展功能。由于需要安全执行代码，因此效率依旧不算高。
+
+## [Core] 修复大量严重错误 <small>by @wibus-wee & @MYXXTS</small>
+
+- 依赖安全性修复
+- 错误指向评论详情接口
+- 替换旧有缓存模块为新缓存模块
+- 无法载入 ESM 模块
+- 主题服务无法注入依赖
+- 主题服务初次使用发生崩溃
+- 同时激活多个主题发生错误
