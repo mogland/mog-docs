@@ -22,10 +22,10 @@ dependencies:
     version: 13.3.0(react-dom@18.2.0)(react@18.2.0)
   nextra:
     specifier: latest
-    version: 2.11.0(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.11.1(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
   nextra-theme-docs:
     specifier: latest
-    version: 2.11.0(next@13.3.0)(nextra@2.11.0)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.11.1(next@13.3.0)(nextra@2.11.1)(react-dom@18.2.0)(react@18.2.0)
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
@@ -41,8 +41,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: 18.17.6
-    version: 18.17.6
+    specifier: 18.17.7
+    version: 18.17.7
   '@types/react':
     specifier: ^18.0.33
     version: 18.0.33
@@ -448,8 +448,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node@18.17.6:
-    resolution: {integrity: sha512-fGmT/P7z7ecA6bv/ia5DlaWCH4YeZvAQMNpUhrJjtAhOhZfoxS1VLUgU2pdk63efSjQaOJWdXMuAJsws+8I6dg==}
+  /@types/node@18.17.7:
+    resolution: {integrity: sha512-WJj/p/cIg6zUsxv1n2leZHpvn8hr9TYuLQxAZxZcK/7+5t5ukmJGelOLGOy3L1MLhAO/sapTJGd1V7kvoIuzUg==}
     dev: true
 
   /@types/prop-types@15.7.5:
@@ -2405,11 +2405,11 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-docs@2.11.0(next@13.3.0)(nextra@2.11.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-kNBVNB/NPW/3MI8Em7KFWjfX5Mtf5xY0UPhDveF5+aEvVUlrViS8Q0hfAdcbxq+0sUEc0hdr4KehU4H36cCkqg==}
+  /nextra-theme-docs@2.11.1(next@13.3.0)(nextra@2.11.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-tMgoD9mqLBgZqZiZTcnw5UgBtXfTWfKK0qa233sTxpZSR7CquK+BH1D4ADdJ/mXOndqCBowJ4r3tyfQovXIlzQ==}
     peerDependencies:
       next: '>=9.5.3'
-      nextra: 2.11.0
+      nextra: 2.11.1
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
@@ -2425,15 +2425,15 @@ packages:
       next: 13.3.0(react-dom@18.2.0)(react@18.2.0)
       next-seo: 6.0.0(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
-      nextra: 2.11.0(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
+      nextra: 2.11.1(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       scroll-into-view-if-needed: 3.0.4
       zod: 3.20.2
     dev: false
 
-  /nextra@2.11.0(next@13.3.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-I9F+NYl5fMBG6HUdPAvD6SbH3lpAvBeOmkS2Hkk+Cn3r8Ouc/QgLmJfpBXmG3gVFFxqYs2eQ2w/ppIivLLdylg==}
+  /nextra@2.11.1(next@13.3.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-m+Ykev+S9Fmx7NSvVxjYFbDuFtKNV6ypnoKz+KH6WCHZor7o81LaWNyIX3RXg24GssFbVpa4sz68JAr76GZ4Sw==}
     engines: {node: '>=16'}
     peerDependencies:
       next: '>=9.5.3'
