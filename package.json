@@ -32,7 +32,7 @@
     "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.11.5",
+    "@types/node": "20.11.6",
     "@types/react": "^18.0.33",
     "gray-matter": "^4.0.3",
     "rss": "^1.2.2",
